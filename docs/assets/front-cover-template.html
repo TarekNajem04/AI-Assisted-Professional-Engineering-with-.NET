@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Front Cover</title>
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html,
+    body {
+      width: 210mm;
+      height: 297mm;
+      overflow: hidden;
+      background: #1A1A1A;
+      font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+      overflow: auto;
+    }
+
+    svg.bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 210mm;
+      height: 297mm;
+      z-index: 0;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      width: 210mm;
+      height: 297mm;
+      padding: 28mm 26mm 40mm;
+    }
+
+    .tagline {
+      font-size: 9pt;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      color: #48cae4;
+      font-weight: 500;
+      margin-bottom: 3mm;
+    }
+
+    .series {
+      font-size: 7.5pt;
+      text-transform: uppercase;
+      letter-spacing: 2.5px;
+      color: #64748b;
+      font-weight: 400;
+      margin-bottom: 12mm;
+    }
+
+    .title {
+      font-size: 36pt;
+      font-weight: 700;
+      line-height: 1.1;
+      color: #ffffff;
+      letter-spacing: -0.3pt;
+      margin-bottom: 8mm;
+    }
+
+    .title .hl {
+      color: #48cae4;
+    }
+
+    .subtitle {
+      font-size: 11pt;
+      font-weight: 350;
+      color: #94a3b8;
+      line-height: 1.55;
+      border-left: 3px solid #48cae4;
+      padding-left: 14px;
+    }
+
+    .footer-bar {
+      position: absolute;
+      bottom: 28mm;
+      left: 26mm;
+      right: 26mm;
+      border-top: 1px solid #2a3650;
+      padding-top: 7mm;
+    }
+
+    .footer-bar:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .author-info {
+      float: left;
+    }
+
+    .author-label {
+      font-size: 7.5pt;
+      text-transform: uppercase;
+      letter-spacing: 2.5px;
+      color: #64748b;
+    }
+
+    .author-name {
+      font-size: 14pt;
+      font-weight: 600;
+      color: #ffffff;
+      margin-top: 1mm;
+    }
+
+    .author-role {
+      font-size: 7.5pt;
+      color: #64748b;
+      margin-top: 0.5mm;
+    }
+
+    .badge-wrap {
+      float: right;
+    }
+
+    .badge {
+      background-color: #0A6E7A;
+      color: white;
+      padding: 3mm 6mm;
+      font-weight: 600;
+      font-size: 10pt;
+      letter-spacing: 0.5px;
+      text-align: center;
+    }
+
+    .badge small {
+      display: block;
+      font-weight: 300;
+      font-size: 6.5pt;
+      color: #a0d8e0;
+      margin-top: 0.8mm;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+
+<body>
+  <svg class="bg" viewBox="0 0 794 1123" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <radialGradient id="bgGlow" cx="80%" cy="20%" r="60%">
+        <stop offset="0%" stop-color="#005F73" stop-opacity="0.9" />
+        <stop offset="50%" stop-color="#003544" stop-opacity="0.6" />
+        <stop offset="100%" stop-color="#1A1A1A" stop-opacity="1" />
+      </radialGradient>
+      <radialGradient id="c1" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="#0A8BA3" stop-opacity="0.25" />
+        <stop offset="60%" stop-color="#0A8BA3" stop-opacity="0.05" />
+        <stop offset="100%" stop-color="#0A8BA3" stop-opacity="0" />
+      </radialGradient>
+      <radialGradient id="c2" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="#005F73" stop-opacity="0.15" />
+        <stop offset="100%" stop-color="#005F73" stop-opacity="0" />
+      </radialGradient>
+      <linearGradient id="fg" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#0A8BA3" stop-opacity="0.12" />
+        <stop offset="50%" stop-color="#0A8BA3" stop-opacity="0.04" />
+        <stop offset="100%" stop-color="#0A8BA3" stop-opacity="0" />
+      </linearGradient>
+      <filter id="b1">
+        <feGaussianBlur stdDeviation="2" />
+      </filter>
+      <filter id="b3">
+        <feGaussianBlur stdDeviation="6" />
+      </filter>
+    </defs>
+    <rect width="794" height="1123" fill="#1A1A1A" />
+    <rect width="794" height="1123" fill="url(#bgGlow)" />
+    <circle cx="620" cy="250" r="380" fill="url(#c1)" filter="url(#b3)" />
+    <circle cx="170" cy="900" r="300" fill="url(#c2)" filter="url(#b3)" />
+    <g transform="translate(480,750)" filter="url(#b1)">
+      <circle cx="0" cy="0" r="180" fill="none" stroke="#0A8BA3" stroke-width="0.8" opacity="0.15" />
+      <circle cx="0" cy="0" r="140" fill="none" stroke="#0A8BA3" stroke-width="0.6" opacity="0.12" />
+      <circle cx="0" cy="0" r="100" fill="none" stroke="#0A8BA3" stroke-width="0.5" opacity="0.1" />
+      <circle cx="0" cy="0" r="220" fill="none" stroke="#0A8BA3" stroke-width="0.3" opacity="0.08" />
+    </g>
+    <g opacity="0.18" filter="url(#b1)">
+      <line x1="120" y1="180" x2="300" y2="350" stroke="#0A8BA3" stroke-width="0.6" />
+      <line x1="300" y1="350" x2="520" y2="280" stroke="#0A8BA3" stroke-width="0.6" />
+      <line x1="520" y1="280" x2="680" y2="420" stroke="#0A8BA3" stroke-width="0.6" />
+      <line x1="680" y1="420" x2="740" y2="600" stroke="#0A8BA3" stroke-width="0.6" />
+      <line x1="740" y1="600" x2="620" y2="780" stroke="#0A8BA3" stroke-width="0.6" />
+      <line x1="300" y1="350" x2="250" y2="550" stroke="#0A8BA3" stroke-width="0.5" />
+      <line x1="250" y1="550" x2="400" y2="650" stroke="#0A8BA3" stroke-width="0.5" />
+      <line x1="400" y1="650" x2="620" y2="780" stroke="#0A8BA3" stroke-width="0.5" />
+      <line x1="120" y1="180" x2="100" y2="400" stroke="#0A8BA3" stroke-width="0.4" />
+      <line x1="100" y1="400" x2="250" y2="550" stroke="#0A8BA3" stroke-width="0.4" />
+      <line x1="520" y1="280" x2="450" y2="150" stroke="#0A8BA3" stroke-width="0.4" />
+      <line x1="450" y1="150" x2="650" y2="100" stroke="#0A8BA3" stroke-width="0.4" />
+      <circle cx="120" cy="180" r="5" fill="#0A8BA3" opacity="0.4" />
+      <circle cx="300" cy="350" r="5" fill="#0A8BA3" opacity="0.4" />
+      <circle cx="520" cy="280" r="4" fill="#0A8BA3" opacity="0.35" />
+      <circle cx="680" cy="420" r="4" fill="#0A8BA3" opacity="0.35" />
+      <circle cx="740" cy="600" r="5" fill="#0A8BA3" opacity="0.4" />
+      <circle cx="620" cy="780" r="4" fill="#0A8BA3" opacity="0.35" />
+      <circle cx="250" cy="550" r="3" fill="#0A8BA3" opacity="0.3" />
+      <circle cx="400" cy="650" r="3" fill="#0A8BA3" opacity="0.3" />
+      <circle cx="100" cy="400" r="3" fill="#0A8BA3" opacity="0.3" />
+      <circle cx="450" cy="150" r="3" fill="#0A8BA3" opacity="0.3" />
+      <circle cx="650" cy="100" r="3" fill="#0A8BA3" opacity="0.3" />
+    </g>
+    <g opacity="0.08" stroke="#0A8BA3" stroke-width="0.5" fill="none">
+      <path d="M50,50 L50,200 L150,200 L150,350" />
+      <path d="M150,350 L150,500 L250,500" />
+      <path d="M744,50 L744,200 L650,200 L650,350" />
+      <path d="M650,350 L650,500 L550,500" />
+      <path d="M50,1073 L50,900 L150,900 L150,750" />
+      <path d="M744,1073 L744,900 L650,900 L650,750" />
+      <rect x="146" y="346" width="8" height="8" rx="1" />
+      <rect x="246" y="496" width="8" height="8" rx="1" />
+      <rect x="546" y="496" width="8" height="8" rx="1" />
+      <rect x="646" y="346" width="8" height="8" rx="1" />
+      <rect x="146" y="746" width="8" height="8" rx="1" />
+      <rect x="646" y="746" width="8" height="8" rx="1" />
+    </g>
+    <g opacity="0.07" fill="none" stroke="#0A8BA3">
+      <polygon points="397,496 447,420 497,496 447,572" stroke-width="1.2" />
+      <polygon points="347,546 397,470 447,546 397,622" stroke-width="0.6" />
+      <polygon points="447,546 497,470 547,546 497,622" stroke-width="0.6" />
+    </g>
+    <g opacity="0.15" fill="#C85040">
+      <circle cx="180" cy="750" r="3" />
+      <circle cx="195" cy="770" r="1.5" />
+      <circle cx="165" cy="775" r="2" />
+      <circle cx="650" cy="250" r="2.5" />
+      <circle cx="665" cy="270" r="1.5" />
+      <circle cx="635" cy="265" r="1.8" />
+    </g>
+    <rect width="794" height="1123" fill="url(#fg)" />
+  </svg>
+  <div class="content">
+    <div class="tagline">Bilingual Engineering Reference</div>
+    <div class="series">Modern .NET Architecture Series</div>
+    <h1 class="title">AI-Assisted<br>Professional Engineering<br>with <span class="hl">.NET</span></h1>
+    <p class="subtitle">Mastering Architectural Judgment, Clean Design, and Core System Ownership in the Era of
+      Generative AI</p>
+    <div class="footer-bar">
+      <div class="author-info">
+        <div class="author-label">Authored by</div>
+        <div class="author-name">Tarek Najem</div>
+        <div class="author-role">Software Architect &bull; .NET Specialist</div>
+      </div>
+      <div class="badge-wrap">
+        <div class="badge">.NET 8/9<small>Production Core</small></div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
