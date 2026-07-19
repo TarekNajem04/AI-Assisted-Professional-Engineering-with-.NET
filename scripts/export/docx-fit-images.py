@@ -1,6 +1,6 @@
 """
 SPDX-License-Identifier: MIT
-Copyright (c) 2025 Tarek Najem
+Copyright (c) 2026 Tarek Najem
 
 This file is part of the AI-Assisted Professional Engineering with .NET
 book project (https://github.com/TarekNajem/AI-Assisted-Professional-Engineering-With-.NET).

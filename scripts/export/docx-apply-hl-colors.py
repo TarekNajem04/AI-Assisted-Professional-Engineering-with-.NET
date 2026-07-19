@@ -1,6 +1,6 @@
 """
 SPDX-License-Identifier: MIT
-Copyright (c) 2025 Tarek Najem
+Copyright (c) 2026 Tarek Najem
 """
 import argparse, os, sys, zipfile
 from lxml import etree

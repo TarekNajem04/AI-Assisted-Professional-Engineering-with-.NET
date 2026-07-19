@@ -1,6 +1,7 @@
 <#
+.NOTES
     SPDX-License-Identifier: MIT
-    Copyright (c) 2025 Tarek Najem
+    Copyright (c) 2026 Tarek Najem
 
     This file is part of the AI-Assisted Professional Engineering with .NET
     book project (https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET).
@@ -9,6 +10,50 @@
 
     This header must not be removed or modified without preserving the
     LICENSE file reference and copyright notice.
+
+.SYNOPSIS
+    Converts a source file to PDF AND DOCX using a specified engine.
+
+.DESCRIPTION
+    Processes a source file and converts it to PDF/DOCX format with options to rebuild Mermaid diagrams and book covers.
+    Currently supports only the 'lualatex' engine.
+
+.PARAMETER SourceFile
+    The full path to the source file to be converted. (Mandatory)
+
+.PARAMETER PdfEngine
+    The engine used to generate the PDF.
+    Default: 'lualatex'
+    Allowed values: 'lualatex'
+
+.PARAMETER RebuildMermaid
+    Specifies whether to regenerate Mermaid diagrams.
+    - $true: Force rebuild.
+    - $false: Do not rebuild.
+    - $null: Use system default behavior.
+
+.PARAMETER RebuildCovers
+    Specifies whether to regenerate book covers.
+    - $true: Force rebuild.
+    - $false: Do not rebuild.
+    - $null: Use system default behavior.
+
+.PARAMETER StyleProfile
+    The name of the style profile used for formatting the output.
+    Default: 'oreilly'
+
+.EXAMPLE
+    .\scripts\export\Export-Manuscript.ps1 -SourceFile "C:\Docs\book.md" -StyleProfile "apress"
+    Converts the file using a custom style profile.
+
+.EXAMPLE
+    .\scripts\export\Export-Manuscript.ps1 -SourceFile "input.md" -RebuildMermaid $true
+    Converts the file and forces rebuilding of diagrams.
+
+    .\scripts\export\Export-Manuscript.ps1 -SourceFile "book\manifesto\introduction.{LNG}.md" -PdfEngine lualatex -RebuildMermaid $false -RebuildCovers $false -StyleProfile oreilly
+    .\scripts\export\Export-Manuscript.ps1 -SourceFile "book\chapters\Chapter-{INDX}\sections\section-{INDEX}.{LNG}.md" -PdfEngine lualatex -RebuildMermaid $false -RebuildCovers $false -StyleProfile oreilly
+    .\scripts\export\Export-Manuscript.ps1 -SourceFile "book\chapters\Chapter-{INDX}\assembled\chapter-{INDEX}.{LNG}.md" -PdfEngine lualatex -RebuildMermaid $false -RebuildCovers $false -StyleProfile oreilly
+
 #>
 [CmdletBinding()]
 param(
@@ -21,7 +66,7 @@ param(
     [string]$StyleProfile = "oreilly"
 )
 
-$ProjectRoot = (git rev-parse --show-toplevel).Trim()
+$ProjectRoot = Convert-Path ((git rev-parse --show-toplevel).Trim())
 
 $Imports = @(
     "scripts\export\core\ApplicationContext.ps1",

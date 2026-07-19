@@ -1,6 +1,6 @@
 <#
     SPDX-License-Identifier: MIT
-    Copyright (c) 2025 Tarek Najem
+    Copyright (c) 2026 Tarek Najem
 
     This file is part of the AI-Assisted Professional Engineering with .NET
     book project (https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET).
@@ -48,7 +48,9 @@ function Resolve-ExportTarget {
   }
 
   $relative = $full.Replace($RepositoryRoot, "").TrimStart('\')
-
+  Write-Log $RepositoryRoot
+  Write-Log $relative
+  Write-Log $full.Replace($RepositoryRoot, "").TrimStart('\')
   $kind = $null
   foreach ($entry in $SourceLayouts) {
     if ($relative -match $entry.Regex) {
