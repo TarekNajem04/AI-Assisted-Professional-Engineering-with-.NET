@@ -1,0 +1,86 @@
+{
+  "ValidLanguages": ["ar", "en"],
+  "ValidTypes": ["pdf", "docx"],
+  "ValidCategories": ["chapters", "sections", "manifesto", "tests"],
+  "PdfEngines": ["lualatex"],
+  "OutputRoot": "exports",
+  "TemplateFileName": "custom-reference.docx",
+  "SourceLayouts": [
+    { "Regex": "^book\\\\manifesto\\\\", "Category": "manifesto" },
+    { "Regex": "\\\\assembled\\\\", "Category": "chapters" },
+    { "Regex": "\\\\sections\\\\", "Category": "sections" }
+  ],
+  "Pdf": {
+    "Engine": "lualatex",
+    "FontSize": "12pt",
+    "PageSize": "a4",
+    "Margins": {
+      "Top": "2.0cm",
+      "Bottom": "2.5cm",
+      "Inner": "2.8cm",
+      "Outer": "1.8cm",
+      "BindingOffset": "0.5cm"
+    },
+    "Fonts": {
+      "MainEn": "Libertinus Serif",
+      "MainAr": "Traditional Arabic",
+      "Sans": "Libertinus Sans",
+      "Mono": "Libertinus Mono"
+    },
+    "LineHeight": 1.05,
+    "SyntaxHighlighting": "pygments",
+    "CoverPages": true,
+    "Title": "AI-Assisted Professional Engineering with .NET"
+  },
+  "Docx": {
+    "SyntaxHighlighting": "pygments",
+    "ReferenceDoc": "custom-reference.docx",
+    "CoverPages": true,
+    "PageSize": "A4",
+    "Margins": {
+      "Top": 2.0,
+      "Bottom": 2.5,
+      "Left": 2.8,
+      "Right": 1.8
+    }
+  },
+  "Covers": {
+    "Rebuild": false,
+    "FrontTemplate": "docs/assets/front-cover-template.html",
+    "BackTemplate": "docs/assets/back-cover-template.html",
+    "OutputWidth": 1654,
+    "OutputHeight": 2339,
+    "Dpi": 200,
+    "Quality": 85,
+    "Format": "jpg"
+  },
+  "Mermaid": {
+    "Width": 800,
+    "Background": "transparent",
+    "CacheDir": "exports/diagrams/mermaid",
+    "Rebuild": false
+  },
+  "Export": {
+    "OutputRoot": "exports",
+    "CleanOutput": true,
+    "Cache": {
+      "KeepGeneratedFiles": true,
+      "Directories": ["exports/covers", "exports/diagrams/mermaid"]
+    }
+  },
+  "Log": {
+    "Colors": {
+      "Banner": "Cyan",
+      "Stage": "DarkMagenta",
+      "Section": "DarkYellow",
+      "Success": "DarkGreen",
+      "Info": "Green",
+      "Warning": "DarkYellow",
+      "Error": "Red",
+      "Deleted": "DarkRed",
+      "Muted": "DarkGray",
+      "Gray": "Gray",
+      "Highlight": "Cyan"
+    }
+  }
+}

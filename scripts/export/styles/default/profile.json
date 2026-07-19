@@ -1,0 +1,12 @@
+{
+  "name": "default",
+  "description": "Professional book style — EB Garamond body, Source Sans Pro headings, Consolas code",
+  "version": "1.0",
+  "docx": {
+    "generator": "generate-docx-style.py",
+    "syntaxHighlighting": "pygments"
+  },
+  "pdf": {
+    "generator": "generate-pdf-style.py"
+  }
+}

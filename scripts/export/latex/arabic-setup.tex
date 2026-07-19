@@ -1,0 +1,36 @@
+\usepackage{fontspec}
+\usepackage{polyglossia}
+
+\setmainlanguage{arabic}
+\setotherlanguage{english}
+
+% ── Arabic fonts ────────────────────────────────────────────────────
+% Profiles can customise the Arabic body font by defining
+% \ArabicFontBody in their pdf-theme.tex (runs BEFORE this file):
+%   \newcommand{\ArabicFontBody}{Noto Naskh Arabic}
+
+\ifdefined\ArabicFontBody
+  \edef\tmp@arabic@body{\noexpand\newfontfamily\noexpand\arabicfont[Script=Arabic]{\ArabicFontBody}}%
+  \tmp@arabic@body
+\else
+  \newfontfamily\arabicfont[Script=Arabic]{Traditional Arabic}
+\fi
+
+\ifdefined\ArabicFontSans
+  \edef\tmp@arabic@sans{\noexpand\newfontfamily\noexpand\arabicfontsf[Script=Arabic]{\ArabicFontSans}}%
+  \tmp@arabic@sans
+\else
+  \newfontfamily\arabicfontsf[Script=Arabic]{Simplified Arabic}
+\fi
+
+\ifdefined\ArabicFontMono
+  \edef\tmp@arabic@mono{\noexpand\newfontfamily\noexpand\arabicfonttt[Script=Arabic]{\ArabicFontMono}}%
+  \tmp@arabic@mono
+\else
+  \newfontfamily\arabicfonttt[Script=Arabic]{Arabic Typesetting}
+\fi
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+
+\fvset{breaklines=true}

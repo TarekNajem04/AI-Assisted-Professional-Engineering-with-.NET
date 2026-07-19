@@ -1,0 +1,11 @@
+{
+  "name": "apress",
+  "description": "Apress-inspired professional book style — traditional serif body, clean sans-serif headings, conservative grayscale palette",
+  "version": "1.0",
+  "docx": {
+    "generator": "generate-docx-style.py"
+  },
+  "pdf": {
+    "generator": "generate-pdf-style.py"
+  }
+}

@@ -1,0 +1,385 @@
+% =============================================================================
+% ProfBook v4 — Apress Edition
+% =============================================================================
+%
+% Designed for:  AI-Assisted Professional Engineering with .NET
+% Engine:        XeLaTeX (--pdf-engine=xelatex)
+% Inclusion:     --include-in-header=pdf-theme-apress.tex
+%
+% PREREQUISITES:
+%   Install a TeX distribution (MiKTeX or TeX Live) with:
+%     xelatex, palatino (or tgpagella), microtype, titlesec, titletoc,
+%     fancyhdr, booktabs, tabularx, array, caption, enumitem, tcolorbox,
+%     framed, fancyvrb, fvextra, etoolbox, textcomp, eurosym, mathspec,
+%     hyperref, xcolor, geometry, setspace, ragged2e, float
+% =============================================================================
+
+% ---- 1. ENGINE CHECK ----
+\RequirePackage{ifxetex}
+\RequirePackage{ifluatex}
+\ifxetex\else\ifluatex\else
+  \PackageError{ProfBook}{XeLaTeX or LuaLaTeX required}{This theme requires
+  XeLaTeX or LuaLaTeX. Compile with: xelatex -shell-escape filename.tex}
+\fi\fi
+
+% ---- 2. FONTS ----
+\usepackage{tgpagella}
+% Palatino clone for body text — matches Apress DOCX Palatino Linotype
+
+% ---- 3. TYPOGRAPHIC ENHANCEMENTS ----
+\usepackage{microtype}
+\microtypesetup{
+                protrusion=true,
+                tracking=true,
+                factor=1100}
+\usepackage{ragged2e}
+\usepackage{setspace}
+\setstretch{1.10}
+
+% ---- 4. PAGE GEOMETRY (A4, wider margins à la Apress) ----
+\usepackage{geometry}
+\geometry{
+  a4paper,
+  top=2.5cm,
+  bottom=2.5cm,
+  inner=3.2cm,
+  outer=2.0cm,
+  includehead,
+  includefoot,
+  headheight=14pt,
+  headsep=0.3cm,
+  footskip=1.2cm,
+  bindingoffset=0.5cm,
+}
+
+% ---- 5. BACKSLASH ESCAPE COMMANDS ----
+\def\n{\textbackslash{}n}
+
+\makeatletter
+% ---- 6. ABSTRACT ----
+\@ifundefined{abstract}{%
+  \newenvironment{abstract}
+    {\section*{\abstractname}\small\itshape}
+    {\par\vspace{6pt}}
+}{}
+
+% ---- 6. FRONT/BACK MATTER ----
+\@ifundefined{frontmatter}{%
+  \newcommand{\frontmatter}{%
+    \pagenumbering{roman}%
+    \pagestyle{plain}%
+  }
+}{}
+\@ifundefined{mainmatter}{%
+  \newcommand{\mainmatter}{%
+    \pagenumbering{arabic}%
+    \pagestyle{fancy}%
+  }
+}{}
+\@ifundefined{backmatter}{%
+  \newcommand{\backmatter}{%
+    \pagestyle{plain}%
+  }
+}{}
+\makeatother
+
+% ---- 7. SHADED ENVIRONMENT ----
+\makeatletter
+\@ifundefined{Shaded}{%
+  \newenvironment{Shaded}{\snugshade\small}{\endsnugshade}
+}{}
+\makeatother
+
+% ---- 8. HEADERS & FOOTERS ----
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+
+% Left header: book title (even pages), right header: chapter name (odd pages)
+% All in small gray Palatino to match Apress DOCX header style
+\fancyhead[LE]{\small\nouppercase{\leftmark}}
+\fancyhead[RO]{\small\nouppercase{\rightmark}}
+% Centered page number only in footer — matches Apress DOCX
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\fancypagestyle{plain}{%
+  \fancyhf{}
+  \fancyfoot[C]{\thepage}
+  \renewcommand{\headrulewidth}{0pt}
+}
+
+\fancypagestyle{titlepage}{%
+  \fancyhf{}
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0pt}
+}
+
+% ---- 9. CHAPTER & SECTION STYLING ----
+\usepackage{titlesec}
+\usepackage{titletoc}
+
+\titleformat{\chapter}[display]
+  {\normalfont\bfseries}
+  {{\LARGE\thechapter}}
+  {18pt}
+  {\Huge}
+  [{\vspace{8pt}{\color{black!15!white}\rule{\textwidth}{0.4pt}}}]
+
+\titlespacing*{\chapter}{0pt}{20pt}{35pt}
+
+\titleformat{\section}
+  {\normalfont\bfseries\LARGE}
+  {\thesection}
+  {1em}
+  {}
+
+\titleformat{\subsection}
+  {\normalfont\bfseries\Large}
+  {\thesubsection}
+  {1em}
+  {}
+
+\titleformat{\subsubsection}
+  {\normalfont\bfseries\normalsize}
+  {\thesubsubsection}
+  {1em}
+  {}
+
+% ---- 10. TABLE OF CONTENTS ----
+\contentsmargin{1.5em}
+\dottedcontents{chapter}[0pt]{\normalfont\bfseries\large}{2.5em}{1em}
+\dottedcontents{section}[1.8em]{\normalfont\normalsize}{2.5em}{1em}
+\dottedcontents{subsection}[4em]{\normalfont\small}{2.8em}{1em}
+
+% ---- 11. CODE BLOCKS ----
+\usepackage{framed}
+\usepackage{tcolorbox}
+\usepackage{fvextra}
+\usepackage{etoolbox}
+
+\tcbuselibrary{skins, breakable}
+
+% Warm colors matching Apress DOCX (F5F0EB warm beige, D0C8BC border)
+\definecolor{codebg}{RGB}{245,240,235}
+\definecolor{codeborder}{RGB}{208,200,188}
+\definecolor{shadecolor}{RGB}{245,240,235}
+\definecolor{codecomment}{RGB}{120,100,60}
+\definecolor{codekeyword}{RGB}{80,60,120}
+\definecolor{codestring}{RGB}{163,21,21}
+\definecolor{codenumber}{RGB}{0,0,0}
+
+\renewenvironment{Shaded}
+  {\snugshade\small}
+  {\endsnugshade}
+
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{
+  commandchars=\\\{\},
+  fontsize=\small,
+  breaklines=true,
+  breakanywhere=true,
+  breakautoindent=true,
+  breaksymbolleft={},
+  breaksymbolright={},
+  tabsize=4
+}
+
+\RecustomVerbatimEnvironment{verbatim}{Verbatim}{
+  fontsize=\small,
+  breaklines=true,
+  breakanywhere=true,
+  breakautoindent=true,
+  breaksymbolleft={},
+  breaksymbolright={},
+  tabsize=4
+}
+
+% Warm comment/diagnostic colors (brown instead of orange)
+\makeatletter
+\@ifundefined{CommentTok}{}{%
+  \renewcommand{\CommentTok}[1]{\textcolor[rgb]{0.47,0.39,0.24}{#1}}%
+}
+\@ifundefined{CommentVarTok}{}{%
+  \renewcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.47,0.39,0.24}{\textbf{#1}}}%
+}
+\@ifundefined{AnnotationTok}{}{%
+  \renewcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.47,0.39,0.24}{\textbf{#1}}}%
+}
+\@ifundefined{DocumentationTok}{}{%
+  \renewcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.47,0.39,0.24}{\textbf{#1}}}%
+}
+\@ifundefined{InformationTok}{}{%
+  \renewcommand{\InformationTok}[1]{\textcolor[rgb]{0.47,0.39,0.24}{\textbf{#1}}}%
+}
+\@ifundefined{PreprocessorTok}{}{%
+  \renewcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.47,0.39,0.24}{#1}}%
+}
+\@ifundefined{WarningTok}{}{%
+  \renewcommand{\WarningTok}[1]{\textcolor[rgb]{0.47,0.39,0.24}{\textbf{#1}}}%
+}
+\makeatother
+
+% ---- 12. INLINE CODE ----
+\let\oldtexttt\texttt
+\renewcommand{\texttt}[1]{%
+  \colorbox{shadecolor}{\oldtexttt{\textcolor[rgb]{0.59,0.20,0.16}{#1}}}%
+}
+
+% ---- 13. TABLE STYLING ----
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{ltablex}
+
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
+
+\setlength{\abovetopsep}{4pt}
+\setlength{\belowbottomsep}{4pt}
+\renewcommand{\arraystretch}{1.08}
+
+% ---- 14. CAPTIONS ----
+\usepackage{caption}
+\captionsetup{
+  font={small},
+  labelfont={bf},
+  justification=centerlast,
+  margin=24pt,
+  skip=6pt,
+}
+
+% ---- 15. BLOCKQUOTES ----
+\renewenvironment{quote}
+  {\list{}{\leftmargin=18pt\rightmargin=18pt
+   \topsep=10pt\partopsep=0pt\parsep=4pt}
+   \item\relax\small\itshape}
+  {\endlist}
+
+% ---- 16. LISTS ----
+\usepackage{enumitem}
+\setlist{topsep=6pt, partopsep=2pt, itemsep=2pt, parsep=2pt}
+\setlist[itemize]{label=\textbullet}
+\setlist[enumerate]{label=\arabic*.}
+
+% ---- 17. DEFINITION LISTS ----
+\renewenvironment{description}
+  {\list{}{\labelwidth=0pt \itemindent=-\leftmargin
+   \let\makelabel\descriptionlabel}}
+  {\endlist}
+
+% ---- 18. HYPERLINKS ----
+\AtEndPreamble{%
+  \hypersetup{%
+    colorlinks=true,
+    linkcolor=black!60!white,
+    urlcolor=blue!40!black,
+    citecolor=black!60!white,
+    bookmarks=true,
+    bookmarksdepth=3,
+    bookmarksnumbered=true,
+    pdfauthor={Tarek Najem},
+    pdftitle={AI-Assisted Professional Engineering with .NET},
+    pdfsubject={Software Engineering / .NET Architecture},
+    pdfkeywords={.NET, AI, Software Engineering, Clean Architecture, DDD},
+    pdfcreator={Pandoc with ProfBook v4 (Apress)},
+  }%
+}
+
+% ---- 19. WIDOW/ORPHAN CONTROL ----
+\clubpenalty=10000
+\widowpenalty=10000
+\displaywidowpenalty=10000
+\renewcommand{\topfraction}{0.85}
+\renewcommand{\bottomfraction}{0.85}
+\renewcommand{\textfraction}{0.1}
+\renewcommand{\floatpagefraction}{0.75}
+
+% ---- 20. FLOAT PLACEMENT ----
+\usepackage{float}
+\floatplacement{figure}{H}
+\floatplacement{table}{H}
+
+\setkeys{Gin}{width=\textwidth,height=0.8\textheight,keepaspectratio}
+
+\makeatletter
+\g@addto@macro\@floatboxreset{\centering}
+\makeatother
+
+% ---- 21. BACKGROUND SHIPOUT PICTURE ----
+\usepackage{eso-pic}
+
+% ---- 22. BACK COVER SUPPORT ----
+\newcommand{\backcover}[1]{%
+  \clearpage
+  \thispagestyle{empty}
+  \AddToShipoutPicture*{%
+    \AtPageLowerLeft{%
+      \includegraphics[width=\paperwidth,height=\paperheight]{#1}%
+    }%
+  }%
+  \null
+}
+
+% ---- 23. SPECIAL CHARACTERS ----
+\usepackage{textcomp}
+\usepackage{eurosym}
+
+% ---- 24. PDF METADATA ----
+\AtBeginDocument{%
+  \hypersetup{%
+    pdftitle={AI-Assisted Professional Engineering with .NET},
+    pdfauthor={Tarek Najem},
+  }%
+}
+
+\makeatletter
+% ---- 25. TITLE PAGE CUSTOMIZATION ----
+\@ifundefined{coverfront}{%
+  \renewcommand{\maketitle}{%
+    \begin{titlepage}
+      \thispagestyle{titlepage}
+      \null\vfill
+      \begin{center}
+        {\normalfont\bfseries\Huge\color{black!85!white} AI-Assisted Professional Engineering with .NET\par}
+        \vspace{12pt}
+        {\Large\itshape\color{gray!60!black} Mastering Architectural Judgment, Clean Design,\\and Core System Ownership in the Era of Generative AI\par}
+        \vspace{24pt}
+        {\large Tarek Najem\par}
+        \vspace{6pt}
+        {\small\color{gray!50!black} Software Architect \textbullet\ .NET Specialist\par}
+        \vspace{36pt}
+        {\normalfont\small\color{gray!40!black} \today\par}
+      \end{center}
+      \vfill
+    \end{titlepage}
+  }
+}{%
+  \renewcommand{\maketitle}{%
+    \thispagestyle{empty}
+    \AddToShipoutPicture*{%
+      \AtPageLowerLeft{%
+        \includegraphics[width=\paperwidth,height=\paperheight]{\coverfront}%
+      }%
+    }%
+    \null
+    \newpage
+  }
+}
+
+% ---- 26. END-DOCUMENT HOOK (back cover) ----
+\@ifundefined{coverback}{}{%
+  \AtEndDocument{%
+    \backcover{\coverback}
+  }
+}
+
+% ---- 27. ARABIC LANGUAGE FONTS (polyglossia) ----
+% These are picked up by arabic-setup.tex (loaded via -H after this theme).
+\newcommand{\ArabicFontBody}{Traditional Arabic}
+\newcommand{\ArabicFontSans}{Simplified Arabic}
+\newcommand{\ArabicFontMono}{Arabic Typesetting}
+
+\makeatother

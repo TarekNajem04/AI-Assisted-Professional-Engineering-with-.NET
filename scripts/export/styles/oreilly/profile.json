@@ -1,0 +1,12 @@
+{
+  "name": "oreilly",
+  "description": "O'Reilly-inspired professional book style — Noto Serif body, Open Sans headings, dark code blocks, deep blue accents",
+  "version": "1.0",
+  "docx": {
+    "generator": "generate-docx-style.py",
+    "syntaxHighlighting": "breezedark"
+  },
+  "pdf": {
+    "generator": "generate-pdf-style.py"
+  }
+}
