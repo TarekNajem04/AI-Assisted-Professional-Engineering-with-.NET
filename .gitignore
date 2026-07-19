@@ -1,0 +1,46 @@
+# ==============================================================================
+# GITIGNORE: TECHNICAL BOOK PUBLISHING & MICROSOFT OFFICE GUARDRAILS
+# ==============================================================================
+
+# Local temp work
+exports/**
+*cover.jpg
+.agent*/**
+# Microsoft Word Temporary & Lock Files (CRITICAL)
+# Word creates hidden files starting with ~$ while a document is open
+~$*.docx
+~$*.doc
+*~$*.docx
+*~$*.doc
+.~lock.*.odt#
+
+# Temporary/Cache build files from our Pandoc Scripts
+scripts/export/temp_docx.md
+scripts/export/temp_pdf.md
+scripts/export/temp_compile.md
+
+# Operating System Trash & Clutter
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+# IDEs & Editors (VS Code / Visual Studio)
+.vscode/
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# LaTeX & MiKTeX Compilation Artifacts (If any logs are generated)
+*.log
+*.aux
+*.toc
+*.out
+*.synctex.gz
+*.pdftex
+
+**/__pycache__/**
+custom-reference.docx
+

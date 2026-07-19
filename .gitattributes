@@ -1,0 +1,20 @@
+# ==============================================================================
+# GITATTRIBUTES: TEXT ENCODING & BINARY ASSET MANAGEMENT
+# ==============================================================================
+
+# Force UTF-8 encoding for all Markdown files to preserve Arabic/English text integrity
+*.md text eol=crlf
+*.tex text eol=crlf
+*.html text eol=crlf
+*.ps1 text eol=crlf
+
+# Treat Microsoft Office and PDF documents as strict binary files
+*.docx binary
+*.doc binary
+*.pdf binary
+
+# Treat Image Assets as strict binary files
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.svg text
