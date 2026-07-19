@@ -3,9 +3,7 @@
 # ==============================================================================
 
 # Local temp work
-exports/**
-*cover.jpg
-.agent*/**
+.tmp*/**
 # Microsoft Word Temporary & Lock Files (CRITICAL)
 # Word creates hidden files starting with ~$ while a document is open
 ~$*.docx
