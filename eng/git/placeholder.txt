@@ -1,0 +1,3 @@
+﻿This placeholder file exists only to allow this folder to be committed
+to the repository. It will be automatically deleted when the export
+pipeline starts generating real output files.
