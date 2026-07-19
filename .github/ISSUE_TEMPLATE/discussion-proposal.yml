@@ -1,0 +1,22 @@
+name: Discussion Proposal
+description: Suggest a technical discussion related to the book topics.
+title: "[Discussion]: "
+labels:
+  - discussion
+body:
+  - type: input
+    id: topic
+    attributes:
+      label: Topic
+      description: Proposed discussion topic.
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Explain the discussion idea.
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Why is this discussion valuable?

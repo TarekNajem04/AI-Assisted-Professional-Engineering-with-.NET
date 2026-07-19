@@ -1,0 +1,10 @@
+blank_issues_enabled: false
+
+contact_links:
+  - name: Project Roadmap
+    url: ../../docs/roadmap/roadmap.en.md
+    about: Review planned work before opening a new issue.
+
+  - name: Project Principles
+    url: ../../docs/governance/project-principles.en.md
+    about: Review the project's guiding principles.

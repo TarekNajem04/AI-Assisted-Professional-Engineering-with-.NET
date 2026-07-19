@@ -1,0 +1,29 @@
+name: Content Correction
+description: Report a factual error, typo, broken link, or incorrect technical statement.
+title: "[Content]: "
+labels:
+  - content
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping improve the manuscript.
+
+  - type: input
+    id: section
+    attributes:
+      label: Section or Chapter
+      description: Where was the issue found?
+      placeholder: Chapter 03 / Section 03.02
+
+  - type: textarea
+    id: issue
+    attributes:
+      label: Description
+      description: Describe the problem.
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested Correction
+      description: Optional proposed correction.
