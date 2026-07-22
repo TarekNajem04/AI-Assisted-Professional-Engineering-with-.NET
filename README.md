@@ -33,6 +33,25 @@ Every engineering decision is documented with the intention of helping future en
 
 ---
 
+## Engineering Knowledge Series
+
+The engineering journey behind this project is documented through a continuously growing series of articles.
+
+| Status | #   | Title                                                              | Repository | LinkedIn | Medium |
+|:------:| :-: | :----------------------------------------------------------------- |:----------:|:--------:|:------:|
+| 🟢     | 001 | From Writing a Technical Book to Building an Engineering Ecosystem | ✔          | ✔       | ✔      |
+| 🟡     | 002 | Why I Built My Own Markdown Publishing Platform Instead of Using Existing Tools |  |  |
+| ⚪     | 003 | Why Markdown Became the Single Source of Truth |  |  |  |
+| ⚪     | 004 | Building a Bilingual Technical Manuscript Without Losing Consistency |  |  |
+| ⚪     | 005 | Engineering the Book Before Writing the Book |  |  |  |
+| ⚪     | 006 | The Hidden Architecture Behind the Publishing Pipeline |  |  |  |
+| ⚪     | 007 | Why I Chose to Build the Project in Public |  |  |  |
+| ⚪     | 008 | How AI Changed My Engineering Workflow |  |  |  |
+| ⚪     | 009 | What I Learned Before Finishing the First Chapter |  |  |  |
+| ⚪     | 010 | What's Next: Beyond the First Release |  |  |  |
+
+---
+
 ## What This Project Is
 
 This repository combines several long-term engineering initiatives into a single cohesive project.
