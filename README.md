@@ -39,7 +39,7 @@ The engineering journey behind this project is documented through a continuously
 
 | Status | #   | Title                                                              | Repository | LinkedIn | Medium |
 |:------:| :-: | :----------------------------------------------------------------- |:----------:|:--------:|:------:|
-| 🟢     | 001 | [From Writing a Technical Book to Building an Engineering Ecosystem](docs\articles\v0.0.1\001-From-Writing-a-Technical-Book-to-Building-an-Engineering-Ecosystem\article.en.md) | ✔          | ✔       | ✔      |
+| 🟢     | 001 | [From Writing a Technical Book to Building an Engineering Ecosystem](.\docs\articles\v0.0.1\001-From-Writing-a-Technical-Book-to-Building-an-Engineering-Ecosystem\article.en.md) | ✔          | ✔       | ✔      |
 | 🟡     | 002 | Why I Built My Own Markdown Publishing Platform Instead of Using Existing Tools |  |  |
 | ⚪     | 003 | Why Markdown Became the Single Source of Truth |  |  |  |
 | ⚪     | 004 | Building a Bilingual Technical Manuscript Without Losing Consistency |  |  |
