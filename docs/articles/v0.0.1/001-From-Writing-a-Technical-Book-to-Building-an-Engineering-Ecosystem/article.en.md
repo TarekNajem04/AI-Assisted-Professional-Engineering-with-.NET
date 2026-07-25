@@ -71,4 +71,4 @@ This is only the beginning.
 
 Next
 
-[**002-Why I Built My Own Markdown Publishing Platform →**](#)
+[**002-Why I Built My Own Markdown Publishing Platform →**](../002-Why-I-Built-My-Own-Markdown-Publishing-Platform/article.en.md)

@@ -40,8 +40,8 @@ The engineering journey behind this project is documented through a continuously
 | Status | #   | Title                                                              | Repository | LinkedIn | Medium |
 |:------:| :-: | :----------------------------------------------------------------- |:----------:|:--------:|:------:|
 | 🟢     | 001 | [From Writing a Technical Book to Building an Engineering Ecosystem](./docs/articles/v0.0.1/001-From-Writing-a-Technical-Book-to-Building-an-Engineering-Ecosystem/article.en.md) | ✔          | ✔       | ✔      |
-| 🟡     | 002 | Why I Built My Own Markdown Publishing Platform Instead of Using Existing Tools |  |  |
-| ⚪     | 003 | Why Markdown Became the Single Source of Truth |  |  |  |
+| 🟢     | 002 | [Why I Built My Own Markdown Publishing Platform Instead of Using Existing Tools](./docs/articles/v0.0.1/002-Why-I-Built-My-Own-Markdown-Publishing-Platform/article.en.md) | ✔          | ✔       | ✔      |
+| 🟡     | 003 | Why Markdown Became the Single Source of Truth |  |  |  |
 | ⚪     | 004 | Building a Bilingual Technical Manuscript Without Losing Consistency |  |  |
 | ⚪     | 005 | Engineering the Book Before Writing the Book |  |  |  |
 | ⚪     | 006 | The Hidden Architecture Behind the Publishing Pipeline |  |  |  |
@@ -310,11 +310,11 @@ Contributions are welcome.
 
 Before contributing, please review:
 
-- [CONTRIBUTING.md](.\CONTRIBUTING.md)
-- [CODE_OF_CONDUCT.md](.\CODE_OF_CONDUCT.md)
-- [COMMUNITY_GUIDELINES.md](.\COMMUNITY_GUIDELINES.md)
-- [SECURITY.md](.\SECURITY.md)
-- [SUPPORT.md](.\SUPPORT.md)
+- [CONTRIBUTING.md](./CONTRIBUTING.md)
+- [CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md)
+- [COMMUNITY_GUIDELINES.md](./COMMUNITY_GUIDELINES.md)
+- [SECURITY.md](./SECURITY.md)
+- [SUPPORT.md](./SUPPORT.md)
 
 Following these guidelines helps maintain consistency, quality, and long-term sustainability across the project.
 
@@ -324,7 +324,7 @@ Following these guidelines helps maintain consistency, quality, and long-term su
 
 This repository is distributed under the terms of the MIT License.
 
-See the [LICENSE](.\LICENSE) file for complete licensing information.
+See the [LICENSE](./LICENSE) file for complete licensing information.
 
 ---
 

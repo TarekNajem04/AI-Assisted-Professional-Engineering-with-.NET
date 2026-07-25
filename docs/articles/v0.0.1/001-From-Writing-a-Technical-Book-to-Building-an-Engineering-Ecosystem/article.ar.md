@@ -83,6 +83,6 @@
 
 التالي
 
-[**002-Why I Built My Own Markdown Publishing Platform →**](#)
+[**002-Why I Built My Own Markdown Publishing Platform →**](../002-Why-I-Built-My-Own-Markdown-Publishing-Platform/article.ar.md)
 
 </div>

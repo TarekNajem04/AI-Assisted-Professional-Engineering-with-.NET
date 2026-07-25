@@ -1,4 +1,4 @@
-# Medium Article 01
+# Article 01
 
 ## Title
 
