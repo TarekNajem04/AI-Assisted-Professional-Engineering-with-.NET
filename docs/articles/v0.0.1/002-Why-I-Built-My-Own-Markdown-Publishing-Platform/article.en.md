@@ -1,4 +1,4 @@
-# Why I Built My Own Markdown Publishing Platform Instead of Using Existing Tools
+# Why I Built My Own Markdown Publishing Platform Instead of Using Existing Tools?
 
 [Medium](https://tareknajem04.medium.com/ai-assisted-professional-engineering-with-net-ad822192ff51)
 [LinkedIn](https://www.linkedin.com/pulse/ai-assisted-professional-engineering-withnet-tarek-najem-emzse)
@@ -77,4 +77,4 @@ Previous
 
 Next
 
-[⌛ **003-Why Markdown Became My Single Source of Truth →**](#)
+[**003-Why Markdown Became My Single Source of Truth →**](../003-Why-Markdown-Became-My-Single-Source-of-Truth/article.en.md)

@@ -1,9 +1,9 @@
 <div dir="rtl">
 
+# لماذا قمت ببناء منصة نشر خاصة بدلًا من الاعتماد على الأدوات الموجودة؟
+
 [Medium](https://tareknajem04.medium.com/ai-assisted-professional-engineering-with-net-5147f75f1720)
 [LinkedIn](https://www.linkedin.com/pulse/ai-assisted-professional-engineering-withnet-tarek-najem-qruae)
-
-# لماذا قمت ببناء منصة نشر خاصة بدلًا من الاعتماد على الأدوات الموجودة؟
 
 من أكثر الأسئلة التي أتوقع أن تُطرح حول هذا المشروع سؤال بسيط:
 

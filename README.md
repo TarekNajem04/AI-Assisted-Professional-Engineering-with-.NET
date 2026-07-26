@@ -2,6 +2,17 @@
 
 > Building Professional Engineering in Public.
 
+![GitHub release](https://img.shields.io/github/v/release/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET)
+![GitHub contributors](https://img.shields.io/github/contributors/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET)
+[![GitHub stars](https://img.shields.io/github/stars/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET)](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/stargazers)
+[![GitHub license](https://img.shields.io/github/license/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET)](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/blob/main/LICENSE)
+
+## 📊 Repo Stats
+
+![Alt](https://repobeats.axiom.co/api/embed/abe0e32d4dc00f68f04f19f03e49123da1e0fee7.svg "Repobeats analytics image")
+
+---
+
 AI-Assisted Professional Engineering with .NET is an open engineering project dedicated to documenting the complete engineering lifecycle of designing, building, documenting, publishing, and continuously improving professional software systems with the assistance of Artificial Intelligence.
 
 The repository goes far beyond publishing a technical book. It openly captures the engineering knowledge, architectural decisions, tooling, automation, documentation practices, and publishing infrastructure developed throughout the project's evolution.
@@ -40,15 +51,15 @@ The engineering journey behind this project is documented through a continuously
 | Status | #   | Title                                                              | Repository | LinkedIn | Medium |
 |:------:| :-: | :----------------------------------------------------------------- |:----------:|:--------:|:------:|
 | 🟢     | 001 | [From Writing a Technical Book to Building an Engineering Ecosystem](./docs/articles/v0.0.1/001-From-Writing-a-Technical-Book-to-Building-an-Engineering-Ecosystem/article.en.md) | ✔          | ✔       | ✔      |
-| 🟢     | 002 | [Why I Built My Own Markdown Publishing Platform Instead of Using Existing Tools](./docs/articles/v0.0.1/002-Why-I-Built-My-Own-Markdown-Publishing-Platform/article.en.md) | ✔          | ✔       | ✔      |
-| 🟡     | 003 | Why Markdown Became the Single Source of Truth |  |  |  |
-| ⚪     | 004 | Building a Bilingual Technical Manuscript Without Losing Consistency |  |  |
-| ⚪     | 005 | Engineering the Book Before Writing the Book |  |  |  |
-| ⚪     | 006 | The Hidden Architecture Behind the Publishing Pipeline |  |  |  |
-| ⚪     | 007 | Why I Chose to Build the Project in Public |  |  |  |
-| ⚪     | 008 | How AI Changed My Engineering Workflow |  |  |  |
-| ⚪     | 009 | What I Learned Before Finishing the First Chapter |  |  |  |
-| ⚪     | 010 | What's Next: Beyond the First Release |  |  |  |
+| 🟢     | 002 | [Why I Built My Own Markdown Publishing Platform Instead of Using Existing Tools?](./docs/articles/v0.0.1/002-Why-I-Built-My-Own-Markdown-Publishing-Platform/article.en.md) | ✔          | ✔       | ✔      |
+| 🟢     | 003 | [Why Markdown Became the Single Source of Truth?](./docs/articles/v0.0.1/003-Why-Markdown-Became-My-Single-Source-of-Truth/article.en.md) | ✔          | ✔       | ✔      |
+| 🟡     | 004 | [Building a Bilingual Technical Manuscript Without Losing Consistency](#) |  |  |
+| ⚪     | 005 | [Engineering the Book Before Writing the Book](#) |  |  |  |
+| ⚪     | 006 | [The Hidden Architecture Behind the Publishing Pipeline](#) |  |  |  |
+| ⚪     | 007 | [Why I Chose to Build the Project in Public?](#) |  |  |  |
+| ⚪     | 008 | [How AI Changed My Engineering Workflow?](#) |  |  |  |
+| ⚪     | 009 | [What I Learned Before Finishing the First Chapter?](#) |  |  |  |
+| ⚪     | 010 | [What's Next: Beyond the First Release?](#) |  |  |  |
 
 ---
 
