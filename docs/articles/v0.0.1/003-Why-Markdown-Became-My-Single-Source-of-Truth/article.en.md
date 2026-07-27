@@ -113,4 +113,4 @@ Previous
 
 Next
 
-[⌛ **004-Building a Bilingual Technical Manuscript →**](#)
+[**004-Building a Bilingual Technical Manuscript →**](../004-Building-a-Bilingual-Technical-Manuscript/article.en.md)
