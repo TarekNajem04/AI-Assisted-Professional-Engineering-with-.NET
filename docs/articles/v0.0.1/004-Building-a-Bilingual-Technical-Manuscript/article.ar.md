@@ -83,6 +83,6 @@
 
 التالي
 
-[⌛ **005-Engineering the Book Before Writing the Book →**](#)
+[ **005-Engineering the Book Before Writing the Book →**](../005-Engineering-the-Book-Before-Writing-the-Book/article.ar.md)
 
 </div>

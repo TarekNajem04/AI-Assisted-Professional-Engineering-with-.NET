@@ -79,4 +79,4 @@ Previous
 
 Next
 
-[⌛ **005-Engineering the Book Before Writing the Book →**](#)
+[**005-Engineering the Book Before Writing the Book →**](../005-Engineering-the-Book-Before-Writing-the-Book/article.en.md)
