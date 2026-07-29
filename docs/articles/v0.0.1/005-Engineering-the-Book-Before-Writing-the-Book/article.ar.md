@@ -85,6 +85,6 @@
 
 التالي
 
-[⌛ **006-The Hidden Architecture Behind the Publishing Pipeline →**](#)
+[**006-The Hidden Architecture Behind the Publishing Pipeline →**](../006-The-Hidden-Architecture-Behind-the-Publishing-Pipeline/article.ar.md)
 
 </div>

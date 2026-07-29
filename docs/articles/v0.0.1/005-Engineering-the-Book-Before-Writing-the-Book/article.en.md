@@ -91,4 +91,4 @@ Previous
 
 Next
 
-[⌛ **006-The Hidden Architecture Behind the Publishing Pipeline →**](#)
+[**006-The Hidden Architecture Behind the Publishing Pipeline →**](../006-The-Hidden-Architecture-Behind-the-Publishing-Pipeline/article.en.md)
