@@ -1,4 +1,4 @@
-# Medium Article 006
+# Article 006
 
 ## Title
 

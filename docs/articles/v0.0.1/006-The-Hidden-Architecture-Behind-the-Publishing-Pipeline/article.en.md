@@ -143,4 +143,4 @@ Previous
 
 Next
 
-[⌛ **007-Why I Chose to Build the Project in Public →**](#)
+[**007-Why I Chose to Build the Project in Public →**](../007-Why-I-Chose-to-Build-the-Project-in-Public/article.en.md)
