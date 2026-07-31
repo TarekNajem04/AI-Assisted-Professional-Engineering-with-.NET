@@ -93,4 +93,4 @@ Previous
 
 Next
 
-[**008-How AI Changed My Engineering Workflow →**](#)
+[**008-How AI Changed My Engineering Workflow →**](../008-How-AI-Changed-My-Engineering-Workflow/article.en.md)
