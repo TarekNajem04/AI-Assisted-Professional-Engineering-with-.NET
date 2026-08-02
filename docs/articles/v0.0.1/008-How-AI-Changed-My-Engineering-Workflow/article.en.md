@@ -89,4 +89,4 @@ Previous
 
 Next
 
-[**009-What I Learned Before Finishing the First Chapter? →**](#)
+[**009-What I Learned Before Finishing the First Chapter? →**](../009-What-I-Learned-Before-Finishing-the-First-Chapter/article.en.md)
