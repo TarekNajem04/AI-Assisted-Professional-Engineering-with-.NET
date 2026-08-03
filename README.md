@@ -58,8 +58,8 @@ The engineering journey behind this project is documented through a continuously
 | 🟢     | 006 | [The Hidden Architecture Behind the Publishing Pipeline](./docs/articles/v0.0.1/006-The-Hidden-Architecture-Behind-the-Publishing-Pipeline/article.en.md) | ✔          | ✔       | ✔      |
 | 🟢     | 007 | [Why I Chose to Build the Project in Public?](./docs/articles/v0.0.1/007-Why-I-Chose-to-Build-the-Project-in-Public/article.en.md) | ✔          | ✔       | ✔      |
 | 🟢     | 008 | [How AI Changed My Engineering Workflow?](./docs/articles/v0.0.1/008-How-AI-Changed-My-Engineering-Workflow/article.en.md) | ✔          | ✔       | ✔      |
-| 🟢     | 009 | [What I Learned Before Finishing the First Chapter?](#) | ✔          | ✔       | ✔      |
-| 🟡     | 010 | [What's Next: Beyond the First Release?](#) |  |  |  |
+| 🟢     | 009 | [What I Learned Before Finishing the First Chapter?](./docs/articles/v0.0.1/009-What-I-Learned-Before-Finishing-the-First-Chapter/article.en.md) | ✔          | ✔       | ✔      |
+| 🟢     | 010 | [What's Next: Beyond the First Release?](./docs/articles/v0.0.1/010-What's-Next-Beyond-the-First-Release/article.en.md) | ✔          | ✔       | ✔      |
 
 ---
 
