@@ -46,7 +46,6 @@ scripts/export/
 │   └── Invoke-CoverBuilder.ps1
 │
 ├── project/                           # المعرفة الخاصة بالمشروع
-│   ├── Project-Conventions.ps1        # اكتشاف اللغة والنوع
 │   ├── Project-Tools.ps1             # اكتشاف الأدوات الخارجية
 │   └── Get-ProjectPandocConfiguration.ps1
 │

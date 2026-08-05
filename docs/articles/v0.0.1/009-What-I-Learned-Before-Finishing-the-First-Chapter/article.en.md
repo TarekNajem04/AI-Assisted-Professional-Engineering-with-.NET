@@ -75,4 +75,4 @@ Previous
 
 Next
 
-[**010-What's Next: Beyond the First Release? →**](#)
+[**010-What's Next: Beyond the First Release? →**](../010-What's-Next-Beyond-the-First-Release/article.en.md)

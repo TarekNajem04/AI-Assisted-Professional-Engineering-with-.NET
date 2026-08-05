@@ -11,8 +11,8 @@ pwsh -ExecutionPolicy Bypass -File scripts/export/Export-Manuscript.ps1 `
 المخرجات:
 
 ```txt
-exports/pdf/en/chapters/chapter-01.en.pdf
-exports/docx/en/chapters/chapter-01.en.docx
+exports/pdf/chapters/Chapter-01/chapter-01.en.pdf
+exports/docx/chapters/Chapter-01/chapter-01.en.docx
 ```
 
 ## مثال 2: تصدير فصل عربي (النمط الافتراضي)
@@ -59,7 +59,7 @@ pwsh -ExecutionPolicy Bypass -File scripts/export/Export-Manuscript.ps1 `
     -StyleProfile "oreilly"
 ```
 
-المخرجات توضع في `exports/pdf/en/sections/` و `exports/docx/en/sections/`.
+المخرجات توضع في `exports/pdf/sections/` و `exports/docx/sections/`.
 
 ## مثال 6: إعادة تعيين كاملة لدليل التصدير
 

@@ -91,6 +91,5 @@ pwsh -ExecutionPolicy Bypass -File scripts/export/Export-Manuscript.ps1 `
 
 ## المحرك القديم: wkhtmltopdf
 
-ملف `Get-PandocWkHtmlToPdfArguments.ps1` موجود في دليل `pandoc/` كمرجع
-تاريخي. هو موسوم بـ **مهمل (DEPRECATED)** وليس جزءًا من الأنبوب النشط.
-محتفظ به للمراجعة الهندسية ولن يُحذف إلا بقرار مشروع صريح.
+أُزيل باني معاملات wkhtmltopdf التاريخي `Get-PandocWkHtmlToPdfArguments.ps1`
+أثناء تنظيف المستودع. wkhtmltopdf غير مدعوم في الأنبوب النشط.

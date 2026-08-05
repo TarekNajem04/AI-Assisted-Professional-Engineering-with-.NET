@@ -16,7 +16,7 @@ These components form the **active export pipeline**.
 
 ---
 
-# Why keep the old files?
+## Why keep the old files?
 
 The older implementation has intentionally been preserved.
 
@@ -34,11 +34,11 @@ Deleting them during the migration would permanently remove valuable engineering
 
 ---
 
-# Current Status
+## Current Status
 
-## Active
+### Active
 
-```
+```txt
 scripts/export/core/
 scripts/export/project/
 scripts/export/preprocessors/
@@ -49,11 +49,11 @@ These directories contain the implementation used by the export pipeline.
 
 ---
 
-## Deprecated
+### Deprecated
 
 Examples include:
 
-```
+```txt
 scripts/export/exporters/
 scripts/export/pdf/
 scripts/export/shared/
@@ -67,7 +67,7 @@ They are **not** part of the active export process.
 
 ---
 
-# Repository Policy
+## Repository Policy
 
 During the Export vNext migration:
 
@@ -79,7 +79,7 @@ Knowledge is considered more valuable than a small reduction in repository size.
 
 ---
 
-# Future Cleanup
+## Future Cleanup
 
 A dedicated repository cleanup will be performed **after the export architecture reaches a stable v1.0 release**.
 
@@ -89,7 +89,7 @@ The cleanup will be based on evidence rather than assumptions.
 
 ---
 
-# Contributor Guidelines
+## Contributor Guidelines
 
 When working on the export subsystem:
 
@@ -101,7 +101,7 @@ When working on the export subsystem:
 
 ---
 
-# Design Principle
+## Design Principle
 
 The repository favors preserving engineering knowledge over aggressive cleanup.
 

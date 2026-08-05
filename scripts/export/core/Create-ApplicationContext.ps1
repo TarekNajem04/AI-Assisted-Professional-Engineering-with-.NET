@@ -47,11 +47,21 @@ function Create-ApplicationContext {
   $baseName = "$($resolved.BaseName).$($resolved.Language)"
   $language = $resolved.Language
   $category = $resolved.Kind
+  $chapter  = $resolved.Chapter
 
   $scriptsRoot = Join-Path $RepositoryRoot 'scripts/export'
 
-  $pdfOutput = Join-Path $RepositoryRoot "$($config.Export.OutputRoot)/pdf/$language/$category/$baseName.pdf"
-  $docxOutput = Join-Path $RepositoryRoot "$($config.Export.OutputRoot)/docx/$language/$category/$baseName.docx"
+  $outputRoot = Join-Path $RepositoryRoot $config.Export.OutputRoot
+  $pdfOutputDir = Join-Path $outputRoot "pdf/$category"
+  $docxOutputDir = Join-Path $outputRoot "docx/$category"
+  if ($chapter) {
+    $pdfOutputDir = Join-Path $pdfOutputDir $chapter
+    $docxOutputDir = Join-Path $docxOutputDir $chapter
+  }
+  $pdfOutput = Join-Path $pdfOutputDir "$baseName.pdf"
+  $docxOutput = Join-Path $docxOutputDir "$baseName.docx"
+  New-Item -ItemType Directory -Force -Path $pdfOutputDir | Out-Null
+  New-Item -ItemType Directory -Force -Path $docxOutputDir | Out-Null
 
   . "$RepositoryRoot\scripts\export\project\Project-Tools.ps1"
   $tools = Get-ProjectTools
@@ -71,6 +81,7 @@ function Create-ApplicationContext {
     BaseName = $baseName
     Language = $language
     Category = $category
+    Chapter = $chapter
     PdfOutputFile = $pdfOutput
     DocxOutputFile = $docxOutput
     PdfEngine = $PdfEngine

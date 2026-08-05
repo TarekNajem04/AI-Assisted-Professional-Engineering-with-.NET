@@ -68,6 +68,7 @@ class ApplicationContext {
   [string] $BaseName
   [string] $Language
   [string] $Category
+  [string] $Chapter
   [string] $PdfOutputFile
   [string] $DocxOutputFile
   # Active PDF engine (e.g. "lualatex"). Must be one of $PdfEngines.

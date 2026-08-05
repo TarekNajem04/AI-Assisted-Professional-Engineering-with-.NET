@@ -63,10 +63,16 @@ function Resolve-ExportTarget {
     throw "Unsupported source layout: $relative"
   }
 
+  $chapter = $null
+  foreach ($segment in $relative.Split('\')) {
+    if ($segment -match '^Chapter-') { $chapter = $segment; break }
+  }
+
   [pscustomobject]@{
     SourceFile = $full
     Language   = $language
     Kind       = $kind
+    Chapter    = $chapter
     BaseName   = $basename
   }
 }
