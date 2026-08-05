@@ -1,20 +1,3 @@
-<!-- book/chapters/chapter-01/sections/section-01.ar.md -->
----
-chapter: 01
-section: 01
-title: "أزمة التعقيد في أنظمة البرمجيات الحديثة"
-language: ar
-tags: [complexity, software-engineering, architecture, dotnet, systems-thinking]
-status: validated
----
-
-<!-- SECTION_METADATA
-Chapter: 01
-Section: 01
-Language: ar
-Status: VALIDATED
--->
-
 <div dir="rtl">
 
 # القسم الأول — أزمة التعقيد في أنظمة البرمجيات الحديثة

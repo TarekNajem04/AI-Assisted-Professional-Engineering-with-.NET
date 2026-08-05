@@ -1,20 +1,3 @@
-<!-- book/chapters/chapter-01/sections/section-01.en.md -->
----
-chapter: 01
-section: 01
-title: "The Complexity Crisis in Modern Software Systems"
-language: en
-tags: [complexity, software-engineering, architecture, dotnet, systems-thinking]
-status: in-progress
----
-
-<!-- SECTION_METADATA
-Chapter: 01
-Section: 01
-Language: en
-Status: IN_PROGRESS
--->
-
 # Section 01 — The Complexity Crisis in Modern Software Systems
 
 ## The Baseline Has Shifted
