@@ -98,11 +98,26 @@ $structure = @(
   ".",  # exports root
   "covers",
   "diagrams\mermaid",
-  "docx\ar\chapters", "docx\ar\sections", "docx\ar\manifesto", "docx\ar\tests",
-  "docx\en\chapters", "docx\en\sections", "docx\en\manifesto", "docx\en\tests",
-  "pdf\ar\chapters", "pdf\ar\sections", "pdf\ar\manifesto", "pdf\ar\tests",
-  "pdf\en\chapters", "pdf\en\sections", "pdf\en\manifesto", "pdf\en\tests"
+  "docx\manifesto",
+  "docx\tests",
+  "pdf\manifesto",
+  "pdf\tests"
 )
+
+# Per-chapter output folders mirror the book/ source layout:
+# exports/{type}/{category}/{Chapter-XX}
+$chaptersRoot = Join-Path $ProjectRoot "book\chapters"
+if (Test-Path $chaptersRoot) {
+  Get-ChildItem -Path $chaptersRoot -Directory -ErrorAction SilentlyContinue |
+    Where-Object { $_.Name -match '^Chapter-' } |
+    ForEach-Object {
+      $name = $_.Name
+      $structure += "docx\chapters\$name"
+      $structure += "docx\sections\$name"
+      $structure += "pdf\chapters\$name"
+      $structure += "pdf\sections\$name"
+    }
+}
 
 if (-not $CleanPlaceholdersOnly) {
   Write-Host "Mode: Full reset" -ForegroundColor DarkCyan
