@@ -4,11 +4,13 @@
 
 ## Purpose
 
-This document defines the versioning and release strategy used by the project.
+This document defines the versioning model used by the project.
 
 The objective is to provide a predictable and maintainable release process throughout the lifecycle of the book.
 
 Version numbers should represent meaningful publication milestones rather than routine repository activity.
+
+This document is the **operational implementation** of the [Release Strategy](../engineering/ReleaseStrategy.md). The strategy defines *why* we release the way we do; this document defines *how* version numbers are assigned.
 
 ---
 
@@ -40,17 +42,22 @@ Each stage serves a different purpose.
 
 # Semantic Versioning Model
 
-The project follows a simplified semantic versioning model:
+The project follows a publication-oriented versioning model built on Semantic Versioning:
 
 ```text
-MAJOR.MINOR.PATCH
+0.<chapter>.<section>
 ```
+
+Where:
+
+* The **minor** digit represents the current chapter.
+* The **patch** digit represents the published section within that chapter.
 
 Examples:
 
 ```text
-v0.0.1
 v0.1.0
+v0.1.1
 v0.2.0
 v1.0.0
 ```
@@ -59,7 +66,7 @@ v1.0.0
 
 # Version Categories
 
-## Bootstrap Releases
+## Foundation Releases
 
 Used during repository foundation.
 
@@ -76,43 +83,51 @@ Purpose:
 * Governance documents
 * Publishing infrastructure
 
-Bootstrap releases do not imply book completion.
+Foundation releases do not imply book completion.
+
+The foundation release `v0.0.1` is published.
 
 ---
 
-## Chapter Releases
+## Section Releases
 
-Used when a chapter reaches publication maturity.
+Each published section is released with a version whose **minor** digit identifies its chapter and whose **patch** digit identifies the section within that chapter.
 
 Examples:
 
 ```text
-v0.1.0
-v0.2.0
-v0.3.0
+v0.1.0   Chapter 1 — Section 1
+v0.1.1   Chapter 1 — Section 2
+v0.1.2   Chapter 1 — Section 3
+v0.2.0   Chapter 2 — Section 1
 ```
 
-Each chapter release should represent a meaningful increase in available content.
+Sections are release units.
+
+Every published section receives a GitHub Release.
 
 ---
 
 ## Maintenance Releases
 
+To preserve the ability to publish corrections without disturbing the section numbering, maintenance releases are anchored to the version they correct.
+
 Examples:
 
 ```text
-v0.1.1
-v0.1.2
+v0.1.1-maintenance.1
+v0.1.1-maintenance.2
 ```
 
-Used for:
+Maintenance releases are reserved for:
 
-* Corrections
-* Typographical fixes
-* Export improvements
-* Documentation updates
+* Broken links
+* Documentation corrections
+* Code sample fixes
+* PDF/DOCX export fixes
+* Technical corrections
 
-No major content expansion should occur within maintenance releases.
+They must **never** introduce new engineering content.
 
 ---
 
@@ -135,26 +150,22 @@ Represents:
 
 # Section Publications
 
-Sections are publication units.
+A section is the primary publication unit.
 
-Sections are not release units.
-
-Publishing a section:
-
-* Does not require a Git tag.
-* Does not require a GitHub Release.
-* Does not require export artifacts.
-
-Typical workflow:
+Publishing a section follows the release workflow defined in the [Release Strategy](../engineering/ReleaseStrategy.md):
 
 ```text
 Write Section
     ↓
 Review
     ↓
+Export Generation
+    ↓
 Commit
     ↓
 Push
+    ↓
+GitHub Release
     ↓
 Publish Announcement
 ```
@@ -170,6 +181,8 @@ Tags should be created only when:
 * A significant milestone is reached.
 * Release notes are available.
 * Repository state is stable.
+
+Maintenance releases receive their own tags (for example, `v0.1.1-maintenance.1`).
 
 Tags should not be created for routine commits.
 
@@ -206,11 +219,11 @@ Artifacts should always be generated from repository content associated with the
 
 ---
 
-# Initial Release Roadmap
+# Release Roadmap
 
 ## v0.0.1
 
-Repository Bootstrap
+Repository Foundation — **released**.
 
 Contents:
 
@@ -224,11 +237,11 @@ Contents:
 
 ## v0.1.0
 
-First Published Chapter
+Chapter 1 — Section 1: The Complexity Crisis in Modern Software Systems
 
 Contents:
 
-* Chapter release
+* Section source
 * Export artifacts
 * Release notes
 
@@ -236,13 +249,13 @@ Contents:
 
 ## Future Releases
 
-Future releases will follow the same pattern:
+Future releases follow the publication model:
 
 ```text
-v0.2.0
-v0.3.0
-v0.4.0
+v0.1.1   Chapter 1 — Section 2
+v0.1.2   Chapter 1 — Section 3
 ...
+v0.2.0   Chapter 2 — Section 1
 ```
 
 Each release should represent meaningful progress in the manuscript.
@@ -275,6 +288,13 @@ Readers should be able to:
 * Review release history
 
 using only the information available in the tagged version.
+
+---
+
+# Relationship to Other Policies
+
+* [Release Strategy](../engineering/ReleaseStrategy.md) — the high-level architectural policy.
+* [Release Policy](../publishing/release-policy.en.md) — the operational release process.
 
 ---
 

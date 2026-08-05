@@ -77,10 +77,9 @@ The project follows an incremental publication approach.
 Publication units:
 
 - Section
-- Chapter
 - Release
 
-Each published section becomes part of the evolving manuscript and contributes to future chapter and book releases.
+Each published section is released individually and contributes to chapter milestones and future book editions.
 
 ---
 
@@ -102,7 +101,7 @@ Feedback collected during this phase may influence future priorities.
 
 ## v0.0.1
 
-Repository Bootstrap
+Repository Bootstrap — **released**.
 
 Goals:
 
@@ -115,7 +114,17 @@ Goals:
 
 ## v0.x
 
-Incremental chapter publication.
+Incremental section publication.
+
+Each published section is released individually.
+
+Examples:
+
+```text
+v0.1.0   Chapter 1 — Section 1
+v0.1.1   Chapter 1 — Section 2
+v0.2.0   Chapter 2 — Section 1
+```
 
 Goals:
 

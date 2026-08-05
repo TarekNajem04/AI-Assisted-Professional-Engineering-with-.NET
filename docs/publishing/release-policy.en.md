@@ -10,6 +10,8 @@ The objective is to ensure that every release represents a stable, reproducible,
 
 Releases are intended to communicate progress to readers and provide durable reference points throughout the life of the manuscript.
 
+This document is the **operational process** that implements the [Release Strategy](../engineering/ReleaseStrategy.md). Version assignment is defined in the [Versioning Policy](../versioning/versioning-policy.en.md).
+
 ---
 
 # Release Principles
@@ -30,7 +32,7 @@ A release is a publication event.
 
 # Release Types
 
-## Bootstrap Release
+## Foundation Release
 
 Example:
 
@@ -45,23 +47,27 @@ Purpose:
 * Publish publication policies
 * Publish project roadmap
 
+Status: **released**.
+
 ---
 
-## Chapter Release
+## Section Release
 
 Examples:
 
 ```text
 v0.1.0
+v0.1.1
 v0.2.0
-v0.3.0
 ```
 
 Purpose:
 
-* Publish mature chapter content
-* Publish chapter exports
+* Publish a completed manuscript section
+* Publish section exports
 * Record publication milestone
+
+Every published section receives a release.
 
 ---
 
@@ -70,15 +76,19 @@ Purpose:
 Examples:
 
 ```text
-v0.1.1
-v0.1.2
+v0.1.1-maintenance.1
+v0.1.1-maintenance.2
 ```
 
 Purpose:
 
-* Correct errors
-* Improve exports
-* Improve documentation
+* Correct broken links
+* Correct documentation errors
+* Fix code samples
+* Fix PDF/DOCX exports
+* Make technical corrections
+
+Maintenance releases must **never** introduce new engineering content.
 
 ---
 

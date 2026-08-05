@@ -63,14 +63,14 @@ Publication hierarchy:
 ```text
 Section
     ↓
-Chapter
-    ↓
 Release
+    ↓
+Chapter Milestone
     ↓
 Book Edition
 ```
 
-Each published section contributes to future chapter releases and future book editions.
+Each published section is released individually. Chapter completion is announced as a milestone rather than as a separate release.
 
 ---
 
@@ -107,7 +107,7 @@ Typical characteristics:
 * Shared theme
 * Architectural coherence
 
-A chapter may be released once its sections reach sufficient maturity.
+A chapter reaches a milestone once its sections reach sufficient maturity; chapter completion is announced through release notes rather than a separate release.
 
 ---
 
@@ -115,10 +115,13 @@ A chapter may be released once its sections reach sufficient maturity.
 
 A release represents a stable publication milestone.
 
+Every published section is released individually. Foundation, section, and maintenance releases follow the [Release Strategy](../engineering/ReleaseStrategy.md).
+
 Releases may contain:
 
-* One or more completed chapters
-* Updated exports
+* Section source
+* Export assets
+* Updated documentation
 * Release notes
 
 ---

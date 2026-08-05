@@ -44,6 +44,21 @@ Every engineering decision is documented with the intention of helping future en
 
 ---
 
+## Engineering Documentation
+
+Engineering documentation answers the question *"how does this project think?"* It defines the identity, vision, philosophy, and long-term strategy behind every engineering decision.
+
+| Document | Answers |
+|----------|---------|
+| [Repository Identity](./docs/engineering/RepositoryIdentity.md) | Who are we? |
+| [Project Vision 2030](./docs/engineering/ProjectVision2030.md) | Where are we going? |
+| [Engineering Manifesto](./docs/engineering/EngineeringManifesto.md) | What do we believe? |
+| [Release Strategy](./docs/engineering/ReleaseStrategy.md) | How do we release? |
+| [Publishing Architecture](./docs/engineering/PublishingArchitecture.md) | How do we publish? |
+| [Branding Strategy](./docs/engineering/BrandStrategy.md) | How do we present ourselves? |
+
+---
+
 ## Engineering Knowledge Series
 
 The engineering journey behind this project is documented through a continuously growing series of articles.

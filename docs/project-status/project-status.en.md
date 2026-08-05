@@ -14,11 +14,11 @@ Readers, contributors, and community members can use this page to understand wha
 
 # Current Phase
 
-## Repository Bootstrap
+## Incremental Section Publication
 
-The project is currently establishing the foundations required for long-term authoring, publication, maintenance, and community engagement.
+The repository foundation has been completed and the foundation release `v0.0.1` is published.
 
-The primary goal of this phase is to create a sustainable framework before large-scale content publication begins.
+The project is now publishing the manuscript section by section. Section 01 of Chapter 1 is available in both English and Arabic.
 
 ---
 
@@ -26,19 +26,19 @@ The primary goal of this phase is to create a sustainable framework before large
 
 ## Repository Visibility
 
-* Planned for public availability
+* Public
 
 ## Documentation
 
-* In progress
+* Published
 
 ## Publishing Infrastructure
 
-* In progress
+* Operational
 
 ## Versioning Strategy
 
-* In progress
+* Adopted — publication model `0.<chapter>.<section>` (see [Release Strategy](../engineering/ReleaseStrategy.md))
 
 ## Community Guidelines
 
@@ -62,9 +62,9 @@ Status:
 
 Status:
 
-* Not yet published
+* Chapter 1 — Section 01: Available
 
-The book content will be published incrementally following the project's publication strategy.
+The book content is published incrementally following the project's publication strategy.
 
 Published chapters and sections will be reflected in future updates of this document.
 
@@ -94,9 +94,11 @@ The objective is to maintain consistency between both editions throughout the pu
 
 Current publication stage:
 
-* Foundation Building
+* Incremental Section Publication
 
-No chapter releases have been published yet.
+The foundation release `v0.0.1` is published.
+
+The first section release (`v0.1.0` — Chapter 1, Section 1) is the next publication milestone.
 
 Future publication milestones will be announced through repository releases and publication channels.
 
