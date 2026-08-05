@@ -7,7 +7,7 @@ Status: Draft (Next Generation)
 
 ---
 
-# 1. Purpose
+## 1. Purpose
 
 This document defines the architecture of the ProfBook publishing system.
 
@@ -20,7 +20,7 @@ scripts/export/
 
 ---
 
-# 2. Design Principles
+## 2. Design Principles
 
 The pipeline SHALL follow these principles.
 
@@ -34,7 +34,7 @@ The pipeline SHALL follow these principles.
 
 ---
 
-# 3. High Level Pipeline
+## 3. High Level Pipeline
 
                 Markdown
                     │
@@ -59,9 +59,9 @@ The pipeline SHALL follow these principles.
 
 ---
 
-# 4. Responsibilities
+## 4. Responsibilities
 
-## Export-Manuscript.ps1
+### Export-Manuscript.ps1
 
 Responsible for:
 
@@ -83,7 +83,7 @@ Must NOT contain engine-specific layout decisions.
 
 ---
 
-## Renderer
+### Renderer
 
 Responsible only for rendering.
 
@@ -98,7 +98,7 @@ Nothing else.
 
 ---
 
-## Theme
+### Theme
 
 Theme is responsible only for appearance.
 
@@ -111,7 +111,7 @@ Theme must never:
 
 ---
 
-## Markdown Preprocessor
+### Markdown Preprocessor
 
 Responsible for:
 
@@ -124,7 +124,7 @@ Nothing else.
 
 ---
 
-# 5. Rendering Targets
+## 5. Rendering Targets
 
 The publishing system officially supports:
 
@@ -139,7 +139,7 @@ No renderer is considered "temporary".
 
 ---
 
-# 6. Renderer Independence
+## 6. Renderer Independence
 
 Every renderer may have its own implementation.
 
@@ -164,7 +164,7 @@ This is acceptable.
 
 ---
 
-# 7. Full File Regeneration Rule
+## 7. Full File Regeneration Rule
 
 Files are never patched.
 
@@ -180,7 +180,7 @@ No "replace line 52".
 
 ---
 
-# 8. KEEP / ROLLBACK Rule
+## 8. KEEP / ROLLBACK Rule
 
 Every experiment receives:
 
@@ -202,7 +202,7 @@ No experiment remains in an unknown state.
 
 ---
 
-# 9. Experiment Rules
+## 9. Experiment Rules
 
 One experiment.
 
@@ -216,7 +216,7 @@ Changing multiple variables simultaneously is forbidden.
 
 ---
 
-# 10. File Size Rule
+## 10. File Size Rule
 
 Large responsibilities must be split.
 
@@ -228,7 +228,7 @@ Files exceeding this size should be reviewed for decomposition.
 
 ---
 
-# 11. LaTeX Modules
+## 11. LaTeX Modules
 
 Future layout modules:
 
@@ -256,14 +256,10 @@ The master file should only orchestrate modules.
 
 ---
 
-# 12. Production Quality
+## 12. Production Quality
 
 The goal is not merely to generate PDFs.
 
 The goal is to produce books suitable for professional publication.
 
 Every implementation decision should be evaluated against this objective.
-
----
-
-End of document.
