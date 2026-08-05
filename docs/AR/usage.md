@@ -78,19 +78,31 @@ pwsh -ExecutionPolicy Bypass -File scripts/export/Export-Manuscript.ps1 `
 ```txt
 exports/
 ├── pdf/
-│   ├── en/
-│   │   └── chapters/
-│   │       └── chapter-01.en.pdf
-│   └── ar/
-│       └── chapters/
-│           └── chapter-01.ar.pdf
+│   ├── chapters/
+│   │   └── Chapter-01/
+│   │       ├── chapter-01.en.pdf
+│   │       └── chapter-01.ar.pdf
+│   ├── sections/
+│   │   └── Chapter-01/
+│   │       ├── section-01.en.pdf
+│   │       └── section-01.ar.pdf
+│   ├── manifesto/
+│   │   ├── introduction.en.pdf
+│   │   └── introduction.ar.pdf
+│   └── tests/
 └── docx/
-    ├── en/
-    │   └── chapters/
-    │       └── chapter-01.en.docx
-    └── ar/
-        └── chapters/
-            └── chapter-01.ar.docx
+    ├── chapters/
+    │   └── Chapter-01/
+    │       ├── chapter-01.en.docx
+    │       └── chapter-01.ar.docx
+    ├── sections/
+    │   └── Chapter-01/
+    │       ├── section-01.en.docx
+    │       └── section-01.ar.docx
+    ├── manifesto/
+    │   ├── introduction.en.docx
+    │   └── introduction.ar.docx
+    └── tests/
 ```
 
 ## وضع الصامت / غير التفاعلي

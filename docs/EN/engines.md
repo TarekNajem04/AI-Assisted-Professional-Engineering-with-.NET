@@ -76,7 +76,6 @@ pwsh -ExecutionPolicy Bypass -File scripts/export/Export-Manuscript.ps1 `
 
 ## Legacy Engine: wkhtmltopdf
 
-The file `Get-PandocWkHtmlToPdfArguments.ps1` exists in the `pandoc/`
-directory as a historical reference. It is marked **DEPRECATED** and is not
-part of the active pipeline. It is kept for architectural review and will
-not be removed unless an explicit project decision is made.
+The historical `Get-PandocWkHtmlToPdfArguments.ps1` argument builder for the
+wkhtmltopdf engine was removed during the repository cleanup. wkhtmltopdf is
+not supported by the active pipeline.

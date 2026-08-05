@@ -11,8 +11,8 @@ pwsh -ExecutionPolicy Bypass -File scripts/export/Export-Manuscript.ps1 `
 Output:
 
 ```txt
-exports/pdf/en/chapters/chapter-01.en.pdf
-exports/docx/en/chapters/chapter-01.en.docx
+exports/pdf/chapters/Chapter-01/chapter-01.en.pdf
+exports/docx/chapters/Chapter-01/chapter-01.en.docx
 ```
 
 ## Example 2: Export an Arabic Chapter (Default Style)
@@ -58,7 +58,7 @@ pwsh -ExecutionPolicy Bypass -File scripts/export/Export-Manuscript.ps1 `
     -StyleProfile "oreilly"
 ```
 
-Output lands in `exports/pdf/en/sections/` and `exports/docx/en/sections/`.
+Output lands in `exports/pdf/sections/` and `exports/docx/sections/`.
 
 ## Example 6: Full Reset of Export Directory
 
