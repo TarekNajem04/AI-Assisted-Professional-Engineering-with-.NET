@@ -79,4 +79,8 @@
 
 [**← 009-What I Learned Before Finishing the First Chapter?**](../009-What-I-Learned-Before-Finishing-the-First-Chapter/article.ar.md)
 
+التالي
+
+[**011-The Complexity Threshold: An Engineering Analysis →**](../../v0.1.0/011-The-Complexity-Threshold-An-Engineering-Analysis/article.ar.md)
+
 </div>
