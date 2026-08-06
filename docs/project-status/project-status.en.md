@@ -98,7 +98,9 @@ Current publication stage:
 
 The foundation release `v0.0.1` is published.
 
-The first section release (`v0.1.0` — Chapter 1, Section 1) is the next publication milestone.
+The first section release (`v0.1.0` — Chapter 1, Section 1) is published.
+
+The next publication milestone is `v0.1.1` — Chapter 1, Section 2.
 
 Future publication milestones will be announced through repository releases and publication channels.
 
@@ -152,14 +154,12 @@ The project aims to maintain high standards in the following areas:
 
 # Next Major Objective
 
-Complete the repository foundation phase, including:
+Continue the incremental section publication model with `v0.1.1` — Chapter 1, Section 2, including:
 
-* Publishing policies
-* Versioning policies
-* Marketing strategy
-* Release workflow definition
-
-Once completed, the project will move toward incremental public publication.
+* Authoring and technical review of Chapter 1, Section 2
+* Publishing campaign preparation (LinkedIn, Medium)
+* Analytics collection for the `v0.1.0` release
+* Continuous improvement of the publishing workflow
 
 ---
 

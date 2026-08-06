@@ -112,6 +112,21 @@ Goals:
 
 ---
 
+## v0.1.0
+
+Chapter 1 — Section 1 — **released**.
+
+The first manuscript section was published as a knowledge release.
+
+Goals:
+
+- Publish the first section (Chapter 1 — Section 1)
+- Validate the section-by-section publishing model
+- Introduce the engineering problem: the complexity crisis
+- Establish the post-release publishing workflow
+
+---
+
 ## v0.x
 
 Incremental section publication.
@@ -121,8 +136,8 @@ Each published section is released individually.
 Examples:
 
 ```text
-v0.1.0   Chapter 1 — Section 1
 v0.1.1   Chapter 1 — Section 2
+v0.1.2   Chapter 1 — Section 3
 v0.2.0   Chapter 2 — Section 1
 ```
 

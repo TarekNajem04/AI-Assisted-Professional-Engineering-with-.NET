@@ -7,6 +7,7 @@
 ### Currently Available
 
 - Introduction
+- Chapter 1 — Section 1: The Complexity Crisis in Modern Software Systems
 
 ### Planned
 
