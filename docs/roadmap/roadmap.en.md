@@ -127,6 +127,20 @@ Goals:
 
 ---
 
+## v0.1.1
+
+Chapter 1 — Section 2 — **released**.
+
+The second manuscript section was published as a knowledge release.
+
+Goals:
+
+- Publish the second section (Chapter 1 — Section 2)
+- Analyze the breakdown of traditional workflows (Agile, TDD, Code Review) at scale
+- Establish the Knowledge Entropy Loop framework and distributed knowledge infrastructure model
+
+---
+
 ## v0.x
 
 Incremental section publication.

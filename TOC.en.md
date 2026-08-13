@@ -7,7 +7,8 @@
 ### Currently Available
 
 - Introduction
-- Chapter 1 — Section 1: The Complexity Crisis in Modern Software Systems
+- Chapter 1 — Section 1: The Complexity Crisis in Modern Software Systems ([v0.1.0](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.1.0))
+- Chapter 1 — Section 2: The Breakdown of Traditional Workflows at Scale ([v0.1.1](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.1.1))
 
 ### Planned
 
@@ -23,8 +24,8 @@
 
 **Topics:**
 
-1. The complexity crisis in modern software systems
-2. Why traditional development workflows break under modern scale
+1. [The complexity crisis in modern software systems](book/chapters/Chapter-01/sections/section-01.en.md)
+2. [Why traditional development workflows break under modern scale](book/chapters/Chapter-01/sections/section-02.en.md)
 3. The shift from implementation focus to architectural judgment
 4. AI as a professional amplifier, not a replacement
 5. The difference between AI-capable and AI-dependent engineers

@@ -63,6 +63,7 @@ Status:
 Status:
 
 * Chapter 1 — Section 01: Available
+* Chapter 1 — Section 02: Available
 
 The book content is published incrementally following the project's publication strategy.
 
@@ -100,7 +101,9 @@ The foundation release `v0.0.1` is published.
 
 The first section release (`v0.1.0` — Chapter 1, Section 1) is published.
 
-The next publication milestone is `v0.1.1` — Chapter 1, Section 2.
+The second section release (`v0.1.1` — Chapter 1, Section 2) is published.
+
+The next publication milestone is `v0.1.2` — Chapter 1, Section 3.
 
 Future publication milestones will be announced through repository releases and publication channels.
 
