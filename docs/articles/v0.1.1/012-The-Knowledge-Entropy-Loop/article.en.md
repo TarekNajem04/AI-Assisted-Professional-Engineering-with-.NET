@@ -1,7 +1,7 @@
 # The Breakdown of Traditional Workflows at Scale: Why Standard Practices Fail in Distributed Systems
 
 [Medium](https://tareknajem04.medium.com/ai-assisted-professional-engineering-with-net-12-ba68df45e61e)
-[LinkedIn](https://www.linkedin.com/pulse/ai-assisted-professional-engineering-net-tarek-najem-00vme)
+[LinkedIn](https://www.linkedin.com/pulse/ai-assisted-professional-engineering-net-tarek-najem-gmfse/)
 
 ## The Implicit Premise of Software Methodology
 

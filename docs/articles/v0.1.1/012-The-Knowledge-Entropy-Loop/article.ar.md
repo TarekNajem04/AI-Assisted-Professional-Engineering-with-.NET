@@ -3,7 +3,7 @@
 # إنتروبيا المعرفة: كيف تنهار سير العمل التقليدية عند حدود الأنظمة الموزعة
 
 [Medium](https://tareknajem04.medium.com/ai-assisted-professional-engineering-with-net-12-arabic-beb2a52594d9)
-[LinkedIn](https://www.linkedin.com/pulse/ai-assisted-professional-engineering-net-tarek-najem-o9tee)
+[LinkedIn](https://www.linkedin.com/pulse/ai-assisted-professional-engineering-net-tarek-najem-o9tee/)
 
 ## الافتراض المستتر خلف منهجيات التطوير
 
