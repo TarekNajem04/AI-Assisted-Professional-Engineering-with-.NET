@@ -82,6 +82,11 @@
 
 [**← 010-ما الذي ينتظر المشروع بعد الإصدار الأول؟**](../../v0.1.0/011-The-Complexity-Threshold-An-Engineering-Analysis/article.ar.md)
 
+التالي
+
+[**012-عندما تخوننا سير العمل التقليدية في الأنظمة الموزعة →**](../../v0.1.1/012-The-Knowledge-Entropy-Loop/article.ar.md)
+
+
 ---
 
 ## تابع الرحلة

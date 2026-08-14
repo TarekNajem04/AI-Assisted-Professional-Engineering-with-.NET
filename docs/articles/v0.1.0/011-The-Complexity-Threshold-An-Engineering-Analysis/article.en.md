@@ -74,6 +74,10 @@ Previous
 
 [**← 010-What's Next Beyond the First Release**](../../v0.1.0/011-The-Complexity-Threshold-An-Engineering-Analysis/article.en.md)
 
+Next
+
+[**012-The Illusion of Bounded Workflows →**](../../v0.1.1/012-The-Knowledge-Entropy-Loop/article.en.md)
+
 ---
 
 ## Continue the Journey

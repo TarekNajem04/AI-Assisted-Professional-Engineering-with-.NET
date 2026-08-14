@@ -168,6 +168,20 @@ The engineering journey behind this project is documented through a continuously
       <td align="center">✔</td>
       <td align="center">✔</td>
     </tr>
+    <tr style="background-color: rgba(0,0,0,0.05);">
+      <td colspan="6" align="center" style="font-weight: bold; padding: 8px;">
+        📄 الفصل 01: القسم 02
+      </td>
+    </tr>
+    <tr>
+      <td align="center">🟢</td>
+      <td align="center">012</td>
+      <td align="left"><a href="./docs/articles/v0.1.1/012-The-Knowledge-Entropy-Loop/article.en.md">The Breakdown of Traditional Workflows at Scale: Why Standard Practices Fail in Distributed Systems</a></td>
+      <td align="center">✔</td>
+      <td align="center">✔</td>
+      <td align="center">✔</td>
+    </tr>
+
   </tbody>
 </table>
 
