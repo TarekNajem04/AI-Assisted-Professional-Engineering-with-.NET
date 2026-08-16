@@ -17,18 +17,20 @@
 
 .DESCRIPTION
     This script manages the folder structure under the `exports` directory.
-    It ensures that every folder always contains a `placeholder.txt` file when empty.
+    A `placeholder.txt` file is kept only when the folder tree (the folder
+    and all of its subfolders) contains no files at all.
     It never deletes folders, only files.
 
     Full Reset Mode:
       - Deletes all files inside each folder EXCEPT placeholder.txt.
-      - Ensures placeholder.txt exists in every folder.
+      - Ensures placeholder.txt exists only where the folder tree is empty.
       - Does not delete any folders.
 
     CleanPlaceholdersOnly Mode:
-      - Deletes placeholder.txt only when real files exist in the same folder.
+      - Deletes placeholder.txt whenever the folder or any of its
+        subfolders contains real files.
+      - Creates placeholder.txt only when the folder tree has no files.
       - If a folder contains only placeholder.txt, nothing is deleted.
-      - If a folder is empty and missing placeholder.txt, it is created.
 
 .PARAMETER Force
     Skips the confirmation prompt in Full Reset mode.
@@ -135,27 +137,29 @@ foreach ($rel in $structure) {
     Write-Host ("Created: {0}" -f (ConvertTo-RelativePath $path)) -ForegroundColor Gray
   }
 
-  $realFiles = Get-ChildItem -Path $path -File -Force -ErrorAction SilentlyContinue  | Where-Object { $_.Name -ne "placeholder.txt" }
-
-  if ( ($realFiles.Count -eq 0) -and (-not (Test-Path $placeholderPath))) {
-    Set-Content -Path $placeholderPath -Value $placeholderContent -Encoding UTF8
-    Write-Host ("Created placeholder: {0}" -f (ConvertTo-RelativePath $placeholderPath)) -ForegroundColor Gray
-  }
-
-  if ($CleanPlaceholdersOnly) {
-    if ($realFiles.Count -gt 0) {
-      if (Test-Path $placeholderPath) {
-        Remove-Item $placeholderPath -Force
-        Write-Host ("Deleted placeholder in folder with real files: {0}" -f (ConvertTo-RelativePath $path)) -ForegroundColor DarkGreen
-      }
-    }
-  }
-  else {
+  if (-not $CleanPlaceholdersOnly) {
     Get-ChildItem -Path $path -File | Where-Object { $_.Name -ne "placeholder.txt" } | ForEach-Object {
       Remove-Item $_.FullName -Force
       Write-Host ("Deleted: {0}" -f (ConvertTo-RelativePath $_.FullName)) -ForegroundColor DarkYellow
     }
+  }
 
+  # Placeholder rule: placeholder.txt exists only when the folder tree
+  # (folder + all subfolders) contains no real files.
+  $realFiles = Get-ChildItem -Path $path -File -Recurse -Force -ErrorAction SilentlyContinue |
+    Where-Object { $_.Name -ne "placeholder.txt" }
+
+  if ($realFiles.Count -gt 0) {
+    if (Test-Path $placeholderPath) {
+      Remove-Item $placeholderPath -Force
+      Write-Host ("Deleted placeholder in folder with real files: {0}" -f (ConvertTo-RelativePath $path)) -ForegroundColor DarkGreen
+    }
+  }
+  else {
+    if (-not (Test-Path $placeholderPath)) {
+      Set-Content -Path $placeholderPath -Value $placeholderContent -Encoding UTF8
+      Write-Host ("Created placeholder: {0}" -f (ConvertTo-RelativePath $placeholderPath)) -ForegroundColor Gray
+    }
   }
 }
 

@@ -74,6 +74,11 @@ function Invoke-MermaidPreprocessor {
     }
     else {
       $mmdc = $Context.Tools.MermaidCli
+      if (-not $mmdc) {
+        Write-Log "  [WARN] Mermaid CLI (mmdc) not found — removing block from source" Warning
+        $sourceContent = $sourceContent -replace [regex]::Escape($match.Value), ''
+        continue
+      }
       $width = $mermaidConfig.Width
       $bg = $mermaidConfig.Background
       $mmdcArgs = @('-i', $TempMmd, '-o', $CachedImage)
