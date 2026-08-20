@@ -34,7 +34,7 @@ $paths = @(
   ".github/CODEOWNERS",
   ".gitignore",
   "LICENSE",
-  "docs/assets/front-cover-template.html"
+  "scripts/export/assets/front-cover-template.html"
 )
 
 foreach ($path in $paths) {

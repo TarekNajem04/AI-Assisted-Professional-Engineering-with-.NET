@@ -29,9 +29,8 @@ function Get-ProjectPandocConfiguration {
 
   $configuration.ResourcePaths += $Context.RepositoryRoot
   $configuration.ResourcePaths += (Join-Path $Context.RepositoryRoot "docs")
-  $configuration.ResourcePaths += (Join-Path $Context.RepositoryRoot "docs/assets")
-  $configuration.ResourcePaths += (Join-Path $Context.RepositoryRoot "docs/assets/images")
-  $configuration.ResourcePaths += (Join-Path $Context.RepositoryRoot "docs/assets/diagrams")
+  $configuration.ResourcePaths += (Join-Path $Context.RepositoryRoot "scripts/export/assets")
+  $configuration.ResourcePaths += (Join-Path $Context.RepositoryRoot "book/assets")
 
   if ($Context.Language -eq "ar") {
     $configuration.Metadata += "dir=rtl"

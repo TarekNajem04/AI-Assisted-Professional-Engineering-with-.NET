@@ -46,8 +46,8 @@
   },
   "Covers": {
     "Rebuild": false,
-    "FrontTemplate": "docs/assets/front-cover-template.html",
-    "BackTemplate": "docs/assets/back-cover-template.html",
+    "FrontTemplate": "scripts/export/assets/front-cover-template.html",
+    "BackTemplate": "scripts/export/assets/back-cover-template.html",
     "OutputWidth": 1654,
     "OutputHeight": 2339,
     "Dpi": 200,

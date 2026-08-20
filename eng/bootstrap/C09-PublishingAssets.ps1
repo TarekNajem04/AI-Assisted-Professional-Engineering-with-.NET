@@ -29,7 +29,7 @@ git restore --staged .
 # Validate Assets
 #------------------------------------------------------------------------------
 
-$assetsDirectory = "docs/assets"
+$assetsDirectory = "scripts/export/assets"
 
 if (-not (Test-Path $assetsDirectory)) {
   throw "Directory not found: $assetsDirectory"
