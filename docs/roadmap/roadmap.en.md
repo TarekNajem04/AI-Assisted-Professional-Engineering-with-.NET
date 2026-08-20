@@ -141,6 +141,21 @@ Goals:
 
 ---
 
+## v0.1.2
+
+Chapter 1 — Section 3 — **released**.
+
+The third manuscript section was published as a knowledge release.
+
+Goals:
+
+- Publish the third section (Chapter 1 — Section 3)
+- Establish the architectural shift from implementation focus to architectural judgment
+- Distinguish the two cognitive modes in engineering and explain why the shift is difficult
+- Apply the shift to everyday .NET engineering decisions
+
+---
+
 ## v0.x
 
 Incremental section publication.

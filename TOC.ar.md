@@ -11,6 +11,7 @@
 - المقدمة
 - الفصل 1 — القسم 1: أزمة التعقيد في أنظمة البرمجيات الحديثة ([v0.1.0](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.1.0))
 - الفصل 1 — القسم 2: انهيار سير العمل التقليدي في الأنظمة الواسعة ([v0.1.1](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.1.1))
+- الفصل 1 — القسم 3: التحول المعماري: من التنفيذ إلى الحكم ([v0.1.2](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.1.2))
 
 ### المخطط للنشر
 
@@ -28,7 +29,7 @@
 
 1. [أزمة التعقيد في الأنظمة البرمجية الحديثة.](book/chapters/Chapter-01/sections/section-01.ar.md)
 2. [لماذا تنكسر مسارات العمل التقليدية تحت حجم المقاييس الحديثة؟](book/chapters/Chapter-01/sections/section-02.ar.md)
-3. التحول من التركيز على التنفيذ (Implementation) إلى الأحكام المعمارية (Architectural Judgment).
+3. [التحول من التركيز على التنفيذ (Implementation) إلى الأحكام المعمارية (Architectural Judgment).](book/chapters/Chapter-01/sections/section-03.ar.md)
 4. الذكاء الاصطناعي كمضخم احترافي، وليس بديلاً للمهندس.
 5. الفرق بين المهندسين القادرين على استخدام الذكاء الاصطناعي والمهندسين المعتمدين عليه كلياً.
 6. كيف تبدو المسؤولية المهنية في عالم مدعوم بالذكاء الاصطناعي؟

@@ -64,6 +64,7 @@ Status:
 
 * Chapter 1 — Section 01: Available
 * Chapter 1 — Section 02: Available
+* Chapter 1 — Section 03: Available
 
 The book content is published incrementally following the project's publication strategy.
 
@@ -103,7 +104,9 @@ The first section release (`v0.1.0` — Chapter 1, Section 1) is published.
 
 The second section release (`v0.1.1` — Chapter 1, Section 2) is published.
 
-The next publication milestone is `v0.1.2` — Chapter 1, Section 3.
+The third section release (`v0.1.2` — Chapter 1, Section 3) is published.
+
+The next publication milestone is `v0.1.3` — Chapter 1, Section 4.
 
 Future publication milestones will be announced through repository releases and publication channels.
 
@@ -157,11 +160,11 @@ The project aims to maintain high standards in the following areas:
 
 # Next Major Objective
 
-Continue the incremental section publication model with `v0.1.1` — Chapter 1, Section 2, including:
+Continue the incremental section publication model with `v0.1.3` — Chapter 1, Section 4, including:
 
-* Authoring and technical review of Chapter 1, Section 2
+* Authoring and technical review of Chapter 1, Section 4
 * Publishing campaign preparation (LinkedIn, Medium)
-* Analytics collection for the `v0.1.0` release
+* Analytics collection for the `v0.1.2` release
 * Continuous improvement of the publishing workflow
 
 ---
