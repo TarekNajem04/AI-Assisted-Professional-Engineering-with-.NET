@@ -100,6 +100,19 @@ function CodeBlock(block)
     block.attributes["direction"] = "ltr"
 
     -------------------------------------------------------------------
+    -- DOCX output: wrap code block in an LTR div
+    -- pandoc's DOCX writer emits <w:bidi/> on every paragraph when the
+    -- document direction is RTL (--metadata dir=rtl). Attributes such as
+    -- direction= or dir= on the CodeBlock itself are ignored, but a
+    -- wrapping Div with dir="ltr" prevents the paragraph-level bidi
+    -- override, keeping code blocks left-aligned inside RTL documents.
+    -------------------------------------------------------------------
+
+    if FORMAT:match("docx") then
+        return pandoc.Div({ block }, pandoc.Attr("", {}, { { "dir", "ltr" } }))
+    end
+
+    -------------------------------------------------------------------
     -- PDF / LaTeX output: wrap code block in flushleft + LTR direction
     -- This overrides the document-wide RTL for code blocks only.
     -------------------------------------------------------------------
