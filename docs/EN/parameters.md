@@ -77,7 +77,7 @@ files and recreates the folder structure with placeholder files.
 
 ### `-CleanPlaceholdersOnly`
 
-Non-destructive mode that removes `placeholder.txt` only from folders that
+Non-destructive mode that removes `.gitkeep` only from folders that
 contain real output files. Creates missing placeholders in empty folders.
 This is the mode used by the pipeline during normal export.
 

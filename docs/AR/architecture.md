@@ -100,7 +100,7 @@ scripts/export/
 
 - **إعادة تعيين كاملة** (`-Force`): حذف جميع ملفات المخرجات، الاحتفاظ
   بـ placeholders.
-- **تنظيف Placeholders** (`-CleanPlaceholdersOnly`): إزالة `placeholder.txt`
+- **تنظيف Placeholders** (`-CleanPlaceholdersOnly`): إزالة `.gitkeep`
   فقط من المجلدات التي تحتوي على ملفات حقيقية.
 
 ### generate-docx-style.py (لكل نمط)

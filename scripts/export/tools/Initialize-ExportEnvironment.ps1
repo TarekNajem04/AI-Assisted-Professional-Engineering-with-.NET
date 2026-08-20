@@ -17,20 +17,20 @@
 
 .DESCRIPTION
     This script manages the folder structure under the `exports` directory.
-    A `placeholder.txt` file is kept only when the folder tree (the folder
+    A `.gitkeep` file is kept only when the folder tree (the folder
     and all of its subfolders) contains no files at all.
     It never deletes folders, only files.
 
     Full Reset Mode:
-      - Deletes all files inside each folder EXCEPT placeholder.txt.
-      - Ensures placeholder.txt exists only where the folder tree is empty.
+      - Deletes all files inside each folder EXCEPT .gitkeep.
+      - Ensures .gitkeep exists only where the folder tree is empty.
       - Does not delete any folders.
 
     CleanPlaceholdersOnly Mode:
-      - Deletes placeholder.txt whenever the folder or any of its
+      - Deletes .gitkeep whenever the folder or any of its
         subfolders contains real files.
-      - Creates placeholder.txt only when the folder tree has no files.
-      - If a folder contains only placeholder.txt, nothing is deleted.
+      - Creates .gitkeep only when the folder tree has no files.
+      - If a folder contains only .gitkeep, nothing is deleted.
 
 .PARAMETER Force
     Skips the confirmation prompt in Full Reset mode.
@@ -74,7 +74,7 @@ Write-Host "Exports root : $ExportsRoot"
 Write-Host ""
 
 $placeholderContent = @"
-This placeholder file exists only to allow this folder to be committed
+This .gitkeep file exists only to allow this folder to be committed
 to the repository. It will be automatically deleted when the export
 pipeline starts generating real output files.
 "@
@@ -87,7 +87,7 @@ function ConvertTo-RelativePath {
 }
 
 if (-not $Force -and -not $CleanPlaceholdersOnly) {
-  Write-Host "⚠ WARNING: This will delete ALL files except placeholder.txt in exports folders." -ForegroundColor Red
+  Write-Host "⚠ WARNING: This will delete ALL files except .gitkeep in exports folders." -ForegroundColor Red
   Write-Host "Do you want to continue? (Y/N)" -ForegroundColor Yellow
   $answer = Read-Host
   if ($answer -ne "Y" -and $answer -ne "y") {
@@ -130,7 +130,7 @@ else {
 
 foreach ($rel in $structure) {
   $path = Join-Path $ExportsRoot $rel
-  $placeholderPath = Join-Path $path "placeholder.txt"
+  $placeholderPath = Join-Path $path ".gitkeep"
 
   if (-not (Test-Path $path)) {
     New-Item -ItemType Directory -Force -Path $path | Out-Null
@@ -138,27 +138,27 @@ foreach ($rel in $structure) {
   }
 
   if (-not $CleanPlaceholdersOnly) {
-    Get-ChildItem -Path $path -File | Where-Object { $_.Name -ne "placeholder.txt" } | ForEach-Object {
+    Get-ChildItem -Path $path -File | Where-Object { $_.Name -ne ".gitkeep" } | ForEach-Object {
       Remove-Item $_.FullName -Force
       Write-Host ("Deleted: {0}" -f (ConvertTo-RelativePath $_.FullName)) -ForegroundColor DarkYellow
     }
   }
 
-  # Placeholder rule: placeholder.txt exists only when the folder tree
+  # Placeholder rule: .gitkeep exists only when the folder tree
   # (folder + all subfolders) contains no real files.
   $realFiles = Get-ChildItem -Path $path -File -Recurse -Force -ErrorAction SilentlyContinue |
-    Where-Object { $_.Name -ne "placeholder.txt" }
+    Where-Object { $_.Name -ne ".gitkeep" }
 
   if ($realFiles.Count -gt 0) {
     if (Test-Path $placeholderPath) {
       Remove-Item $placeholderPath -Force
-      Write-Host ("Deleted placeholder in folder with real files: {0}" -f (ConvertTo-RelativePath $path)) -ForegroundColor DarkGreen
+      Write-Host ("Deleted .gitkeep in folder with real files: {0}" -f (ConvertTo-RelativePath $path)) -ForegroundColor DarkGreen
     }
   }
   else {
     if (-not (Test-Path $placeholderPath)) {
       Set-Content -Path $placeholderPath -Value $placeholderContent -Encoding UTF8
-      Write-Host ("Created placeholder: {0}" -f (ConvertTo-RelativePath $placeholderPath)) -ForegroundColor Gray
+      Write-Host ("Created .gitkeep: {0}" -f (ConvertTo-RelativePath $placeholderPath)) -ForegroundColor Gray
     }
   }
 }

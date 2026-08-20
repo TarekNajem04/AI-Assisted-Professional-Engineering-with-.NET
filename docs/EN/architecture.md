@@ -99,7 +99,7 @@ directories (to keep them in Git) and removes them when real output files
 appear. Supports two modes:
 
 - **Full Reset** (`-Force`): delete all output files, keep placeholders.
-- **Clean Placeholders** (`-CleanPlaceholdersOnly`): remove `placeholder.txt`
+- **Clean Placeholders** (`-CleanPlaceholdersOnly`): remove `.gitkeep`
   only from folders that contain real files.
 
 ### generate-docx-style.py (per profile)
