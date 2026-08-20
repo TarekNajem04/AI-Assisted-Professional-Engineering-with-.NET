@@ -180,6 +180,8 @@ This knowledge deficit is not addressable by harder work, better tooling within 
 
 The shift this requires is from workflows designed around individual knowledge to workflows designed around distributed knowledge infrastructure. Specifications that capture architectural intent, not just interface contracts. Test suites that verify integration behavior, not just unit behavior against mocks. Review practices augmented by tooling that makes the systemic context of a change visible rather than relying on reviewer memory. And development environments that can surface relevant knowledge — patterns, precedents, failure modes — at the moment a developer is making a decision, rather than requiring that developer to already know what to search for.
 
+Specifically, the incidental couplings that arise across shared data stores add another layer of complexity that does not appear in formal change-propagation diagrams. A service may modify a database table in a way that looks local, yet the same table is used as the source for a query view in another service that a former engineer created to simplify a particular query. This undocumented linkage is not discovered until the consuming service stops suddenly after a deployment that looked entirely safe in code review.
+
 This is the precise engineering context into which AI-assisted development tools arrive. Not as productivity multipliers in a well-functioning workflow, but as a potential solution to a specific, structural knowledge deficit that traditional workflows cannot address. Whether they provide that solution — and under what conditions, and with what limitations — is the subject of the next section.
 
 ---
