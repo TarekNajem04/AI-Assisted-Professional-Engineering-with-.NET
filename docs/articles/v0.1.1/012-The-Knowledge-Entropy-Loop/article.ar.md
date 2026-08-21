@@ -218,6 +218,10 @@ flowchart TD
 
 [**← 011-عتبة التعقيد: لماذا لا يكفي المزيد من الجهد الفردي؟**](../../v0.1.0/011-The-Complexity-Threshold-An-Engineering-Analysis/article.ar.md)
 
+التالي
+
+[**012- الموثوقية تُصمَّم، لا تُورَّث →**](../../v0.1.2/013-Reliability-Is-Designed-Not-Inherited/article.ar.md)
+
 ---
 
 ## تابع الرحلة

@@ -216,6 +216,10 @@ Previous
 
 [**← 011-The Complexity Threshold: An Engineering Analysis**](../../v0.1.0/011-The-Complexity-Threshold-An-Engineering-Analysis/article.en.md)
 
+Next
+
+[**013-Reliability Is Designed, Not Inherited →**](../../v0.1.2/013-Reliability-Is-Designed-Not-Inherited/article.en.md)
+
 ---
 
 ## Continue the Journey
