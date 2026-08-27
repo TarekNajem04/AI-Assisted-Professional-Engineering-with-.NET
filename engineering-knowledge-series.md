@@ -127,6 +127,14 @@ The engineering journey behind this project is documented through a continuously
       <td align="center">✔</td>
       <td align="center">✔</td>
     </tr>
+    <tr>
+      <td align="center">🟢</td>
+      <td align="center">014</td>
+      <td align="left"><a href="./docs/articles/v0.1.3/014-The-Proportionality-Claim/article.en.md">The Proportionality Claim: Why AI Amplifies Judgment, Not Replaces It</a></td>
+      <td align="center">✔</td>
+      <td align="center">—</td>
+      <td align="center">—</td>
+    </tr>
 
   </tbody>
 </table>
