@@ -2,8 +2,8 @@
 
 # ادعاء التناسب: لماذا يُعزِّز الذكاء الاصطناعي الحكم لا يُبدّله
 
-[Medium](https://tareknajem04.medium.com/ai-assisted-professional-engineering-with-net-14-arabic)
-[LinkedIn](https://www.linkedin.com/pulse/ai-assisted-professional-engineering-net-tarek-najem-014-ar)
+[Medium](https://tareknajem04.medium.com/ai-assisted-professional-engineering-with-net-014-arabic-ca02f33371bd)
+[LinkedIn](https://www.linkedin.com/pulse/ai-assisted-professional-engineering-net-tarek-najem-2r5ae)
 
 *القيمة التي يستخرجها المهندس من أدوات الذكاء الاصطناعي تتناسب مباشرةً مع الحكم المعماري الذي يُقدّمه لتلك الأدوات — وفهم ذلك يُغيّر كل شيء حول طريقة عملك.*
 

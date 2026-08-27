@@ -1,7 +1,7 @@
 # The Proportionality Claim: Why AI Amplifies Judgment, Not Replaces It
 
-[Medium](https://tareknajem04.medium.com/ai-assisted-professional-engineering-with-net-14)
-[LinkedIn](https://www.linkedin.com/pulse/ai-assisted-professional-engineering-net-tarek-najem-014)
+[Medium](https://tareknajem04.medium.com/ai-assisted-professional-engineering-with-net-014-01e1eda55445)
+[LinkedIn](https://www.linkedin.com/pulse/ai-assisted-professional-engineering-net-tarek-najem-ywbde)
 
 *The value an engineer extracts from AI tools is proportional to the architectural judgment they bring to those tools — and understanding why changes everything about how you work.*
 
