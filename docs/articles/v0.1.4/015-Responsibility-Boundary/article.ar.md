@@ -1,9 +1,9 @@
 <div dir="rtl">
 
-# حدود المسؤولية: حيث ينتهي الفهم وبدأ النشر
+# حدود المسؤولية: حيث ينتهي الفهم ويبدأ النشر
 
-[Medium](https://tareknajem04.medium.com/ai-assisted-professional-engineering-with-net-15-arabic)
-[LinkedIn](https://www.linkedin.com/pulse/ai-assisted-professional-engineering-net-tarek-najem-015-ar)
+[Medium](https://tareknajem04.medium.com/ai-assisted-professional-engineering-with-net-015-arabic-5fd9b5930535)
+[LinkedIn](https://www.linkedin.com/pulse/ai-assisted-professional-engineering-net-tarek-najem-dpcre)
 
 *حدود المسؤولية ليست الخط بين الكود الذي كتبه المهندس والكود الذي ولّده الذكاء الاصطناعي. هذا الخط موجود عند لوحة المفاتيح؛ حدود المسؤولية موجودة عند الفهم.*
 
@@ -61,7 +61,7 @@
 
 حين يستخدم مهندسون متعددون في الفريق أدوات الذكاء الاصطناعي لتوليد الكود، المشكلة ليست فقط أن أي مهندس فردي قد يفشل في الحفاظ على حدود مسؤوليته — بل أن عملية المراجعة يجب الآن أن تُقيّم الصحة النظامية للكود الذي لم يكتب المراجعون ولم يشهدوا توليده.
 
-Several practices address this at the team level. The first is explicit architectural context in pull request descriptions: when AI-generated code is submitted for review, the description should include not just what the code does, but what assumptions it makes and what the author verified about those assumptions. The second is maintaining a team-level catalog of the system's implicit contracts — the behavioral expectations that callers have formed, the timing assumptions downstream consumers depend on, the error semantics that retry infrastructure relies on. The third is treating post-incident analysis as a team learning investment rather than a blame process, because the incidents that result from responsibility boundary violations contain the specific architectural knowledge gaps that need to be addressed.
+تتناول عدة ممارسات هذا الأمر على مستوى الفريق. أولها توفير سياق معماري واضح في وصف طلبات السحب: فعند تقديم كود مُولّد بواسطة الذكاء الاصطناعي للمراجعة، يجب أن يتضمن الوصف ليس فقط وظيفة الكود، بل الافتراضات التي يقوم عليها، وما تحقق منه المؤلف بشأن هذه الافتراضات. ثانيها الاحتفاظ بفهرس على مستوى الفريق للعقود الضمنية للنظام - التوقعات السلوكية التي وضعها المستخدمون، وافتراضات التوقيت التي يعتمد عليها المستهلكون النهائيون، ودلالات الأخطاء التي تعتمد عليها بنية إعادة المحاولة. ثالثها التعامل مع تحليل ما بعد الحادث كاستثمار في تعلم الفريق بدلاً من عملية إلقاء اللوم، لأن الحوادث الناتجة عن انتهاكات حدود المسؤولية تحتوي على ثغرات معرفية معمارية محددة يجب معالجتها.
 
 ## الحدود كممارسة تعلّم
 

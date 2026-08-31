@@ -1,7 +1,7 @@
 # The Responsibility Boundary: Where Understanding Ends and Deployment Begins
 
-[Medium](https://tareknajem04.medium.com/ai-assisted-professional-engineering-with-net-15)
-[LinkedIn](https://www.linkedin.com/pulse/ai-assisted-professional-engineering-net-tarek-najem-015)
+[Medium](https://tareknajem04.medium.com/ai-assisted-professional-engineering-with-net-015-d39481509a04)
+[LinkedIn](https://www.linkedin.com/pulse/ai-assisted-professional-engineering-net-tarek-najem-lcxwe)
 
 *The responsibility boundary is not the line between code the engineer typed and code the AI generated. That line exists at the keyboard; the responsibility boundary exists at the understanding.*
 
