@@ -11,6 +11,7 @@
 - Chapter 1 — Section 2: The Breakdown of Traditional Workflows at Scale ([v0.1.1](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.1.1))
 - Chapter 1 — Section 3: The Architectural Shift: From Implementation to Judgment ([v0.1.2](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.1.2))
 - Chapter 1 — Section 4: AI as Professional Amplifier: Defining the Relationship ([v0.1.3](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.1.3))
+- Chapter 1 — Section 5: The Responsibility Boundary in AI-Augmented Development ([v0.1.4](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.1.4))
 
 ### Planned
 
@@ -30,7 +31,7 @@
 2. [Why traditional development workflows break under modern scale](book/chapters/Chapter-01/sections/section-02.en.md)
 3. [The shift from implementation focus to architectural judgment](book/chapters/Chapter-01/sections/section-03.en.md)
 4. [AI as a professional amplifier, not a replacement](book/chapters/Chapter-01/sections/section-04.en.md)
-5. The difference between AI-capable and AI-dependent engineers
+5. [The difference between AI-capable and AI-dependent engineers](book/chapters/Chapter-01/sections/section-05.en.md)
 6. What professional responsibility looks like in an AI-augmented world
 7. How to approach this book and build skills that outlast any tool
 
