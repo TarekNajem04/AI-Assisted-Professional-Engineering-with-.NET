@@ -14,6 +14,7 @@
 - الفصل 1 — القسم 3: التحول المعماري: من التنفيذ إلى الحكم ([v0.1.2](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.1.2))
 - الفصل 1 — القسم 4: الذكاء الاصطناعي كمُعزِّز احترافي: تعريف العلاقة ([v0.1.3](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.1.3))
 - الفصل 1 — القسم 5: حدود المسؤولية في التطوير المُعزَّز بالذكاء الاصطناعي ([v0.1.4](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.1.4))
+- الفصل 1 — القسم 6: بناء المهارات التي تتجاوز الأدوات ([v0.1.5](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.1.5))
 
 ### المخطط للنشر
 
@@ -34,7 +35,7 @@
 3. [التحول من التركيز على التنفيذ (Implementation) إلى الأحكام المعمارية (Architectural Judgment).](book/chapters/Chapter-01/sections/section-03.ar.md)
 4. [الذكاء الاصطناعي كمضخم احترافي، وليس بديلاً للمهندس.](book/chapters/Chapter-01/sections/section-04.ar.md)
 5. [الفرق بين المهندسين القادرين على استخدام الذكاء الاصطناعي والمهندسين المعتمدين عليه كلياً.](book/chapters/Chapter-01/sections/section-05.ar.md)
-6. كيف تبدو المسؤولية المهنية في عالم مدعوم بالذكاء الاصطناعي؟
+6. [كيف تبدو المسؤولية المهنية في عالم مدعوم بالذكاء الاصطناعي؟](book/chapters/Chapter-01/sections/section-06.ar.md)
 7. كيف تقارب هذا الكتاب وتبني مهارات تدوم لفترة أطول من أي أداة؟
 
 ---
