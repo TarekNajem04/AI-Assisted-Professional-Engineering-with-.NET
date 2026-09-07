@@ -1,7 +1,7 @@
 # Building Skills That Outlast Tools: The Compound Curve of Architectural Judgment
 
-[Medium](https://tareknajem04.medium.com/ai-assisted-professional-engineering-with-net-16)
-[LinkedIn](https://www.linkedin.com/pulse/ai-assisted-professional-engineering-net-tarek-najem-016)
+[Medium](https://tareknajem04.medium.com/ai-assisted-professional-engineering-with-net-16-f346ada55747)
+[LinkedIn](https://www.linkedin.com/pulse/ai-assisted-professional-engineering-withnet-tarek-najem-clw1e)
 
 *The skills that compound in value in an AI-augmented world are precisely the skills that AI tools structurally cannot supply.*
 

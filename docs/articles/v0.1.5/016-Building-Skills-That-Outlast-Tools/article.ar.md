@@ -2,8 +2,8 @@
 
 # بناء المهارات التي تتجاوز الأدوات: منحنى التراكم للحكم المعماري
 
-[Medium](https://tareknajem04.medium.com/ai-assisted-professional-engineering-with-net-16-arabic)
-[LinkedIn](https://www.linkedin.com/pulse/ai-assisted-professional-engineering-net-tarek-najem-016-ar)
+[Medium](https://tareknajem04.medium.com/ai-assisted-professional-engineering-with-net-16-arabic-6bc19b5737b7)
+[LinkedIn](https://www.linkedin.com/pulse/ai-assisted-professional-engineering-withnet-tarek-najem-oy5he)
 
 *المهارات التي تزداد قيمتها في عالم مدعوم بالذكاء الاصطناعي هي بالضبط تلك المهارات التي لا تستطيع أدوات الذكاء الاصطناعي توفيرها من الناحية الهيكلية.*
 
