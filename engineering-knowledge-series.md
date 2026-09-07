@@ -143,6 +143,14 @@ The engineering journey behind this project is documented through a continuously
       <td align="center">✔</td>
       <td align="center">✔</td>
     </tr>
+    <tr>
+      <td align="center">🟢</td>
+      <td align="center">016</td>
+      <td align="left"><a href="./docs/articles/v0.1.5/016-Building-Skills-That-Outlast-Tools/article.en.md">Building Skills That Outlast Tools: The Compound Curve of Architectural Judgment</a></td>
+      <td align="center">✔</td>
+      <td align="center">—</td>
+      <td align="center">—</td>
+    </tr>
 
   </tbody>
 </table>
