@@ -2,8 +2,8 @@
 
 # التحول الهندسي: قراءة الفصل الأول كحجة واحدة
 
-[Medium](https://tareknajem04.medium.com/ai-assisted-professional-engineering-with-net-chapter-1-arabic)
-[LinkedIn](https://www.linkedin.com/pulse/ai-assisted-professional-engineering-net-tarek-najem-chapter-1-ar)
+[Medium](https://tareknajem04.medium.com/ai-assisted-professional-engineering-with-net-17-arabic-f4c98d8d77a3)
+[LinkedIn](https://www.linkedin.com/pulse/ai-assisted-professional-engineering-withnet-tarek-najem-ug7me)
 
 *أقسام الفصل الأول الستة ليست ستة مواضيع. إنها ست عدسات على تحول معرفي واحد — وقراءتها معاً تكشف أداة تشخيص يستطيع القارئ توجيهها نحو ممارسته هو.*
 

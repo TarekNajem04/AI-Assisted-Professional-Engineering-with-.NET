@@ -1,7 +1,7 @@
 # The Engineering Transformation: Reading Chapter 1 as One Argument
 
-[Medium](https://tareknajem04.medium.com/ai-assisted-professional-engineering-with-net-chapter-1)
-[LinkedIn](https://www.linkedin.com/pulse/ai-assisted-professional-engineering-net-tarek-najem-chapter-1)
+[Medium](https://tareknajem04.medium.com/ai-assisted-professional-engineering-with-net-17-e58a5820c107)
+[LinkedIn](https://www.linkedin.com/pulse/ai-assisted-professional-engineering-withnet-tarek-najem-qcohe)
 
 *The six sections of Chapter 1 are not six topics. They are six lenses on a single cognitive shift — and read together, they form a diagnostic instrument the reader can turn on their own practice.*
 
