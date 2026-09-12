@@ -151,6 +151,14 @@ The engineering journey behind this project is documented through a continuously
       <td align="center">✔</td>
       <td align="center">✔</td>
     </tr>
+    <tr>
+      <td align="center">🟢</td>
+      <td align="center">017</td>
+      <td align="left"><a href="./docs/articles/v0.1.6/017-The-Engineering-Transformation/article.en.md">The Engineering Transformation: Reading Chapter 1 as One Argument</a></td>
+      <td align="center">✔</td>
+      <td align="center">—</td>
+      <td align="center">—</td>
+    </tr>
 
   </tbody>
 </table>
