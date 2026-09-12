@@ -29,7 +29,8 @@ DistributedPaymentService/
 │   │   ├── PaymentService.Infrastructure.csproj
 │   │   ├── GlobalUsings.cs
 │   │   ├── Gateway/
-│   │   │   └── ExternalGatewayClient.cs ← S04 engineer-adjusted Polly pipeline
+│   │   │   ├── ExternalGatewayClient.cs ← S04 engineer-adjusted Polly pipeline
+│   │   │   └── StubGatewayClient.cs     ← deterministic test-double gateway
 │   │   ├── Messaging/
 │   │   │   ├── InMemoryMessageBus.cs    ← bus adapter (thread-safe acks)
 │   │   │   └── InMemoryOutbox.cs        ← S05 at-least-once outbox adapter
@@ -48,6 +49,8 @@ DistributedPaymentService/
 │       ├── Properties/launchSettings.json
 │       ├── Endpoints/
 │       │   └── PreferencesEndpoint.cs   ← S03 budgeted endpoint
+│       ├── Serialization/
+│       │   └── ValueObjectConverters.cs ← CustomerId/PaymentId JSON converters
 │       └── Workers/
 │           └── DataProcessingWorker.cs   ← S06 closure-free batch loop
 └── tests/
@@ -56,7 +59,7 @@ DistributedPaymentService/
     │   └── Domain/PaymentTests.cs       ← 9 domain tests
     └── Integration/
         ├── PaymentService.Tests.Integration.csproj
-        ├── PaymentProcessorIntegrationTests.cs ← 3 processor tests (in-memory doubles)
+        ├── PaymentProcessorIntegrationTests.cs ← 4 processor tests (in-memory doubles)
         └── OutboxTests.cs               ← 5 outbox contract tests
 ```
 

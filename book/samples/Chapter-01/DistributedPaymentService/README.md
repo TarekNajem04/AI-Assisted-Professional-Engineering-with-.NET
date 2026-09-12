@@ -60,9 +60,13 @@ anything else succeeds). Set `ExternalGateway:UseStub=false` plus a real
 dotnet test DistributedPaymentService.slnx
 ```
 
-Unit (9) + Integration (3 processor + 5 outbox) = 17 tests. The integration
+Unit (9) + Integration (4 processor + 5 outbox) = 18 tests. The integration
 doubles are in-memory and shaped like the durable adapters — they verify
 processor and outbox logic, not production infrastructure.
+
+The outbox is registered in DI but has no hosted dispatcher in this sample:
+dispatch (store → read → mark, redelivery, depth) is demonstrated and
+verified by the outbox integration tests, not by runtime traffic.
 
 ### Architecture
 

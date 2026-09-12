@@ -16,8 +16,9 @@ namespace PaymentService.Application.UseCases;
 ///
 /// Architecture decisions documented (S03 practice):
 ///
-/// 1. IDEMPOTENCY: the idempotency check reads a durable store (DB), not a
-///    cache, and the payment record plus idempotency key are written in ONE
+/// 1. IDEMPOTENCY: the idempotency check reads a durable store, not a
+///    cache (a real database in production; the in-memory adapter here),
+///    and the payment record plus idempotency key are written in ONE
 ///    atomic repository call. This closes the S01 crash-between-writes hole,
 ///    where a crash after the DB write but before the cache write caused the
 ///    retry to miss and double-charge. Concurrent duplicates remain guarded

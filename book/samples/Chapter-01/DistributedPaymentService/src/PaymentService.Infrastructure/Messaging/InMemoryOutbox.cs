@@ -2,13 +2,14 @@
 //
 // S05 concept: responsibility boundary for reliable event publication.
 //
-// This adapter stands in for a transactional outbox table. The production
-// version would append the event row in the SAME database transaction as
-// the business write; here a single lock makes the pair indivisible.
-// The honesty note: this lock survives threads, not process restarts.
-// A durable outbox survives restarts — that is the documented gap between
-// this adapter and production, and the reason the dispatcher below treats
-// every pending event as redeliverable.
+// This adapter stands in for a transactional outbox table, with two stated
+// limits. First, the single lock makes the sequence-assignment-plus-insert
+// pair indivisible — it does NOT replicate a business-row-plus-event-row
+// database transaction, which remains the caller's pairing responsibility
+// (see IOutbox.StoreAsync). Second, durability is process memory: the lock
+// survives threads, not restarts. A durable outbox survives restarts; that
+// gap is why redelivery-after-restart is a contract property demonstrated by
+// tests, not by this adapter's own storage.
 //
 // The three S05 obligations, discharged here:
 //

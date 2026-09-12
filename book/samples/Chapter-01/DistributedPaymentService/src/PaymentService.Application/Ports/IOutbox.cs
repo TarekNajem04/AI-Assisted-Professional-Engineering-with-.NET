@@ -26,9 +26,15 @@ public sealed record OutboxMessage(
 public interface IOutbox
 {
     /// <summary>
-    /// Atomically appends the event together with the business write it
-    /// describes. Callers must hold no partial state: after this returns,
-    /// the event WILL eventually be dispatched (at-least-once).
+    /// Appends one event to the dispatch stream. The single append is
+    /// indivisible (sequence assignment and insert happen as one unit), so
+    /// callers never observe a half-stored event. What this call does NOT do
+    /// is bundle an external business write: in production the caller issues
+    /// this store inside the SAME database transaction as its business row;
+    /// that pairing is the caller's responsibility under this contract.
+    /// After this returns, the event WILL eventually be dispatched
+    /// (at-least-once) — provided the process (or its durable successor)
+    /// keeps a dispatcher running.
     /// </summary>
     Task<OutboxMessage> StoreAsync(
         string eventType, string payload, CancellationToken ct);
