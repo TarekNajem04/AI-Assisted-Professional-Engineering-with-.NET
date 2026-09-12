@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- book/samples/Chapter-01/DistributedPaymentService/src/PaymentService.Core/PaymentService.Core.csproj -->
+  <!--
+    Core project: domain models and domain logic only.
+    No framework, no infrastructure, no AI dependency.
+    Architecture note (S03): Domain layer has no outward dependencies.
+    Everything flows inward — Application and Infrastructure depend on Core.
+  -->
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+
+</Project>

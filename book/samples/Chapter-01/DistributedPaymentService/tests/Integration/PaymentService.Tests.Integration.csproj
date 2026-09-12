@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- book/samples/Chapter-01/DistributedPaymentService/tests/Integration/PaymentService.Tests.Integration.csproj -->
+  <!--
+    Integration tests: verify behaviour under real operational conditions.
+    These complement unit tests by testing the scenarios unit tests CANNOT
+    catch — the S02 failure modes from Chapter 01.
+  -->
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../../src/PaymentService.Core/PaymentService.Core.csproj" />
+    <ProjectReference Include="../../src/PaymentService.Application/PaymentService.Application.csproj" />
+    <ProjectReference Include="../../src/PaymentService.Infrastructure/PaymentService.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk"  Version="17.12.0" />
+    <PackageReference Include="MSTest.TestAdapter"       Version="3.7.3" />
+    <PackageReference Include="MSTest.TestFramework"    Version="3.7.3" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.2" />
+  </ItemGroup>
+
+</Project>

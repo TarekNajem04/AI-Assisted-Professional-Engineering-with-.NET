@@ -31,6 +31,12 @@ Desktop.ini
 *.userosscache
 *.sln.docstates
 
+# .NET build artifacts (never commit generated binaries)
+[Bb]in/
+[Oo]bj/
+TestResults/
+*.nupkg
+
 # LaTeX & MiKTeX Compilation Artifacts (If any logs are generated)
 *.log
 *.aux

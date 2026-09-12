@@ -1,0 +1,9 @@
+<!-- book/samples/Chapter01_EngineeringTransformation/DistributedPaymentService.slnx -->
+<Solution>
+  <Project Path="src/PaymentService.Core/PaymentService.Core.csproj" />
+  <Project Path="src/PaymentService.Application/PaymentService.Application.csproj" />
+  <Project Path="src/PaymentService.Infrastructure/PaymentService.Infrastructure.csproj" />
+  <Project Path="src/PaymentService.Api/PaymentService.Api.csproj" />
+  <Project Path="tests/Unit/PaymentService.Tests.Unit.csproj" />
+  <Project Path="tests/Integration/PaymentService.Tests.Integration.csproj" />
+</Solution>
