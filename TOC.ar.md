@@ -15,6 +15,7 @@
 - الفصل 1 — القسم 4: الذكاء الاصطناعي كمُعزِّز احترافي: تعريف العلاقة ([v0.1.3](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.1.3))
 - الفصل 1 — القسم 5: حدود المسؤولية في التطوير المُعزَّز بالذكاء الاصطناعي ([v0.1.4](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.1.4))
 - الفصل 1 — القسم 6: بناء المهارات التي تتجاوز الأدوات ([v0.1.5](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.1.5))
+- الفصل 1 — الفصل الكامل: التحول الهندسي: من كاتب أكواد إلى مفكر معماري ([v0.1.6](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.1.6))
 
 ### المخطط للنشر
 

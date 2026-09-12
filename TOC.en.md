@@ -13,6 +13,7 @@
 - Chapter 1 — Section 4: AI as Professional Amplifier: Defining the Relationship ([v0.1.3](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.1.3))
 - Chapter 1 — Section 5: The Responsibility Boundary in AI-Augmented Development ([v0.1.4](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.1.4))
 - Chapter 1 — Section 6: Building Skills That Outlast Tools ([v0.1.5](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.1.5))
+- Chapter 1 — Complete Chapter: The Engineering Transformation: From Code Writer to Architectural Thinker ([v0.1.6](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.1.6))
 
 ### Planned
 
