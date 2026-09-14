@@ -159,6 +159,14 @@ The engineering journey behind this project is documented through a continuously
       <td align="center">✔</td>
       <td align="center">✔</td>
     </tr>
+    <tr>
+      <td align="center">🟢</td>
+      <td align="center">018</td>
+      <td align="left"><a href="./docs/articles/v0.1.6/018-Assumptions-Made-Explicit/article.en.md">Assumptions Made Explicit: A Payment-Service Case Study in Architectural Judgment</a></td>
+      <td align="center">✔</td>
+      <td align="center">✔</td>
+      <td align="center">✔</td>
+    </tr>
 
   </tbody>
 </table>
