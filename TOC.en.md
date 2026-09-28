@@ -14,6 +14,7 @@
 - Chapter 1 — Section 5: The Responsibility Boundary in AI-Augmented Development ([v0.1.4](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.1.4))
 - Chapter 1 — Section 6: Building Skills That Outlast Tools ([v0.1.5](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.1.5))
 - Chapter 1 — Complete Chapter: The Engineering Transformation: From Code Writer to Architectural Thinker ([v0.1.6](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.1.6))
+- Chapter 2 — Section 1: What an LLM Actually Does: Tokens, Embeddings, Context, and Inference ([v0.2.0](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.2.0))
 
 ### Planned
 
@@ -43,7 +44,7 @@
 
 **Topics:**
 
-1. What an LLM Actually Does
+1. [What an LLM Actually Does](book/chapters/Chapter-02/sections/section-01.en.md)
 2. Tokens, Embeddings, Context, and Inference
 3. Why LLMs Appear Intelligent
 4. The Limits of Statistical Reasoning
