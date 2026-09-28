@@ -2,8 +2,8 @@
 
 # ما الذي يفعله النموذج اللغوي الكبير فعلاً: الحلقة التوليدية خلف كل رمز
 
-[Medium]()
-[LinkedIn]()
+[Medium](https://tareknajem04.medium.com/ai-assisted-professional-engineering-with-net-19-arabic-990813d4dde8)
+[LinkedIn](https://www.linkedin.com/pulse/ai-assisted-professional-engineering-net-tarek-najem-gjl3e)
 
 *معظم أحكامنا عن الذكاء الاصطناعي مبنية على نموذج ذهني للآلة، ومعظم تلك النماذج تمنح الآلة قدرات لا تملكها. هذا المقال يصف الآلية الحقيقية — لأن كل قرار عن مواضع الثقة بالمخرجات المولّدة مبني عليها.*
 

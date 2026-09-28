@@ -1,7 +1,7 @@
 # What an LLM Actually Does: The Generative Loop Behind Every Token
 
-[Medium]()
-[LinkedIn]()
+[Medium](https://tareknajem04.medium.com/ai-assisted-professional-engineering-with-net-0a66c74d0592)
+[LinkedIn](https://www.linkedin.com/pulse/ai-assisted-professional-engineering-net-tarek-najem-hispe)
 
 *Most engineering judgments about AI rest on a model of the machine, and most of those models grant the machine faculties it does not have. This essay describes the actual mechanism — because every decision about where generated output can be trusted is downstream of it.*
 
