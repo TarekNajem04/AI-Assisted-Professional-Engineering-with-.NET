@@ -167,6 +167,14 @@ The engineering journey behind this project is documented through a continuously
       <td align="center">✔</td>
       <td align="center">✔</td>
     </tr>
+    <tr>
+      <td align="center">🟢</td>
+      <td align="center">019</td>
+      <td align="left"><a href="./docs/articles/v0.2.0/019-What-an-LLM-Actually-Does/article.en.md">What an LLM Actually Does: The Generative Loop Behind Every Token</a></td>
+      <td align="center">✔</td>
+      <td align="center">✔</td>
+      <td align="center">✔</td>
+    </tr>
 
   </tbody>
 </table>
