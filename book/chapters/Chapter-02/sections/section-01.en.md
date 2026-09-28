@@ -1,20 +1,3 @@
-<!-- book/chapters/chapter-02/sections/section-01.en.md -->
----
-chapter: 02
-section: 01
-title: "What an LLM Actually Does: Tokens, Embeddings, Context, and Inference"
-language: en
-tags: [llm-mechanics, tokens, embeddings, context-window, inference, dotnet]
-status: validated
----
-
-<!-- SECTION_METADATA
-Chapter: 02
-Section: 01
-Language: en
-Status: VALIDATED
--->
-
 # Section 01 — What an LLM Actually Does: Tokens, Embeddings, Context, and Inference
 
 ## The Mechanism Behind the Interface
