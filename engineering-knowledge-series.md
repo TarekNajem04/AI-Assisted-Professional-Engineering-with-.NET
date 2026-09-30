@@ -175,6 +175,14 @@ The engineering journey behind this project is documented through a continuously
       <td align="center">✔</td>
       <td align="center">✔</td>
     </tr>
+    <tr>
+      <td align="center">🟢</td>
+      <td align="center">020</td>
+      <td align="left"><a href="./docs/articles/v0.2.1/020-Why-LLMs-Appear-Intelligent/article.en.md">Why LLMs Appear Intelligent: Compressed Behaviour at Scale</a></td>
+      <td align="center">✔</td>
+      <td align="center">✔</td>
+      <td align="center">✔</td>
+    </tr>
 
   </tbody>
 </table>
