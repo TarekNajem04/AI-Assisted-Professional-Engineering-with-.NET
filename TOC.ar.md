@@ -18,6 +18,7 @@
 - الفصل 1 — الفصل الكامل: التحول الهندسي: من كاتب أكواد إلى مفكر معماري ([v0.1.6](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.1.6))
 - الفصل 2 — القسم 1: ما الذي يفعله النموذج اللغوي الكبير فعلاً: الرموز والتضمينات والسياق والاستدلال ([v0.2.0](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.2.0))
 - الفصل 2 — القسم 2: لماذا تبدو النماذج اللغوية ذكيةً ([v0.2.1](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.2.1))
+- الفصل 2 — القسم 3: حدود الاستدلال الإحصائي ([v0.2.2](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.2.2))
 
 ### المخطط للنشر
 
@@ -50,7 +51,7 @@
 1. [ماذا يفعل النموذج اللغوي الكبير (LLM) فعلياً؟](book/chapters/Chapter-02/sections/section-01.ar.md)
 2. الرموز الرقمية (Tokens)، التضمينات (Embeddings)، السياق (Context)، والاستدلال (Inference).
 3. [لماذا تظهر النماذج اللغوية الكبيرة ذكية؟](book/chapters/Chapter-02/sections/section-02.ar.md)
-4. حدود الاستدلال الإحصائي (Statistical Reasoning).
+4. [حدود الاستدلال الإحصائي (Statistical Reasoning).](book/chapters/Chapter-02/sections/section-03.ar.md)
 5. الهلوسة (Hallucinations) وأنماط الفشل.
 6. الأنظمة الحتمية (Deterministic) مقابل الأنظمة الاحتمالية (Probabilistic).
 7. فهم الثقة واليقين (Confidence and Uncertainty).
