@@ -183,6 +183,14 @@ The engineering journey behind this project is documented through a continuously
       <td align="center">✔</td>
       <td align="center">✔</td>
     </tr>
+    <tr>
+      <td align="center">🟢</td>
+      <td align="center">021</td>
+      <td align="left"><a href="./docs/articles/v0.2.2/021-The-Limits-of-Statistical-Reasoning/article.en.md">The Limits of Statistical Reasoning: Correct Shape, Wrong Semantics</a></td>
+      <td align="center">✔</td>
+      <td align="center">✔</td>
+      <td align="center">✔</td>
+    </tr>
 
   </tbody>
 </table>
