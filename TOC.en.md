@@ -17,6 +17,7 @@
 - Chapter 2 — Section 1: What an LLM Actually Does: Tokens, Embeddings, Context, and Inference ([v0.2.0](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.2.0))
 - Chapter 2 — Section 2: Why LLMs Appear Intelligent ([v0.2.1](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.2.1))
 - Chapter 2 — Section 3: The Limits of Statistical Reasoning ([v0.2.2](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.2.2))
+- Chapter 2 — Section 4: Hallucinations and Failure Modes ([v0.2.3](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.2.3))
 
 ### Planned
 
@@ -50,7 +51,7 @@
 2. Tokens, Embeddings, Context, and Inference
 3. [Why LLMs Appear Intelligent](book/chapters/Chapter-02/sections/section-02.en.md)
 4. [The Limits of Statistical Reasoning](book/chapters/Chapter-02/sections/section-03.en.md)
-5. Hallucinations and Failure Modes
+5. [Hallucinations and Failure Modes](book/chapters/Chapter-02/sections/section-04.en.md)
 6. Deterministic vs Probabilistic Systems
 7. Understanding Confidence and Uncertainty
 8. When Not to Trust AI Output
