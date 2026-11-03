@@ -21,6 +21,18 @@ function Invoke-MarkdownPreprocessor {
 
   $content = Get-Content -LiteralPath $Context.SourceFile -Raw -Encoding UTF8
 
+  # Code Direction normalization (editorial constitution §15).
+  # <code dir="ltr">X</code> is raw HTML to Pandoc: the tag is dropped and the
+  # text loses its Code styling in DOCX/PDF. Convert it to a Pandoc Span that
+  # carries a real Code element:
+  #   [`X`]{dir=ltr} -> DOCX: VerbatimChar + LTR run; PDF: \LR{\texttt{X}}
+  $content = [regex]::Replace(
+    $content,
+    '<code\s+dir="ltr">(.*?)</code>',
+    '[`$1`]{dir=ltr}',
+    [System.Text.RegularExpressions.RegexOptions]::Singleline
+  )
+
   $preprocessedPath = Join-Path $Context.Working.Directory "preprocessed.md"
   Set-Content -LiteralPath $preprocessedPath -Value $content -Encoding UTF8
 

@@ -114,6 +114,7 @@ function Create-ApplicationContext {
       DocxReferenceTemplate = $templateFilePath
       LuaFilterCodeblockBidi = Join-Path (Join-Path $scriptsRoot 'lua') 'codeblock-bidi.lua'
       LuaFilterEscapeBackslash = Join-Path (Join-Path $scriptsRoot 'lua') 'escape-backslash.lua'
+      LuaFilterSectionPageBreak = Join-Path (Join-Path $scriptsRoot 'lua') 'section-pagebreak.lua'
       ValidScriptPath = Join-Path $scriptsRoot 'docx-validate-styles.py'
       MarginScriptPath = Join-Path $scriptsRoot 'docx-set-margins.py'
       CoversScriptPath = Join-Path $scriptsRoot 'docx-add-covers.py'

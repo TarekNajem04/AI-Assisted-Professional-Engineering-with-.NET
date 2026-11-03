@@ -51,6 +51,7 @@ class ScriptsPaths {
   [string] $DocxReferenceTemplate
   [string] $LuaFilterCodeblockBidi
   [string] $LuaFilterEscapeBackslash
+  [string] $LuaFilterSectionPageBreak
   [string] $ValidScriptPath
   [string] $MarginScriptPath
   [string] $CoversScriptPath

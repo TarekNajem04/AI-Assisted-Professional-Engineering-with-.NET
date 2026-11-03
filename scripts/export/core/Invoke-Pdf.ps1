@@ -73,6 +73,7 @@ function Invoke-Pdf {
   $content = $content -replace ([char]0x2713), 'v'
   $content = $content -replace ([char]0x2500), '-'
   $content = $content -replace ([char]0x2192), '->'
+  $content = $content -replace ([char]0x2190), '<-'
   Set-Content -LiteralPath $pdfInput -Value $content -Encoding UTF8
 
   $arguments = Get-PandocPdfArguments -Context $Context

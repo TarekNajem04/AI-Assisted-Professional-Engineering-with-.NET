@@ -42,6 +42,7 @@ function Get-ProjectPandocConfiguration {
   }
 
   $configuration.LuaFilters += $Context.Paths.LuaFilterCodeblockBidi
+  $configuration.LuaFilters += $Context.Paths.LuaFilterSectionPageBreak
 
   $themeFile = $Context.Paths.ThemeFile
   if ($Context.Working.ThemeFile -and (Test-Path $Context.Working.ThemeFile)) {
