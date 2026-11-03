@@ -20,6 +20,7 @@
 - الفصل 2 — القسم 2: لماذا تبدو النماذج اللغوية ذكيةً ([v0.2.1](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.2.1))
 - الفصل 2 — القسم 3: حدود الاستدلال الإحصائي ([v0.2.2](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.2.2))
 - الفصل 2 — القسم 4: الهلوسة وأنماط الفشل ([v0.2.3](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.2.3))
+- الفصل 2 — القسم 5: الأنظمة الحتمية والأنظمة الاحتمالية ([v0.2.4](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.2.4))
 
 ### المخطط للنشر
 
@@ -54,7 +55,7 @@
 3. [لماذا تظهر النماذج اللغوية الكبيرة ذكية؟](book/chapters/Chapter-02/sections/section-02.ar.md)
 4. [حدود الاستدلال الإحصائي (Statistical Reasoning).](book/chapters/Chapter-02/sections/section-03.ar.md)
 5. [الهلوسة (Hallucinations) وأنماط الفشل.](book/chapters/Chapter-02/sections/section-04.ar.md)
-6. الأنظمة الحتمية (Deterministic) مقابل الأنظمة الاحتمالية (Probabilistic).
+6. [الأنظمة الحتمية (Deterministic) مقابل الأنظمة الاحتمالية (Probabilistic).](book/chapters/Chapter-02/sections/section-05.ar.md)
 7. فهم الثقة واليقين (Confidence and Uncertainty).
 8. متى يجب ألا تثق بمخرجات الذكاء الاصطناعي.
 
