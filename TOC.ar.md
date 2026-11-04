@@ -21,6 +21,7 @@
 - الفصل 2 — القسم 3: حدود الاستدلال الإحصائي ([v0.2.2](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.2.2))
 - الفصل 2 — القسم 4: الهلوسة وأنماط الفشل ([v0.2.3](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.2.3))
 - الفصل 2 — القسم 5: الأنظمة الحتمية والأنظمة الاحتمالية ([v0.2.4](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.2.4))
+- الفصل 2 — القسم 6: الثقة المُعايَرة: متى لا تثق بمخرجات الذكاء الاصطناعي ([v0.2.5](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.2.5))
 
 ### المخطط للنشر
 
@@ -56,7 +57,7 @@
 4. [حدود الاستدلال الإحصائي (Statistical Reasoning).](book/chapters/Chapter-02/sections/section-03.ar.md)
 5. [الهلوسة (Hallucinations) وأنماط الفشل.](book/chapters/Chapter-02/sections/section-04.ar.md)
 6. [الأنظمة الحتمية (Deterministic) مقابل الأنظمة الاحتمالية (Probabilistic).](book/chapters/Chapter-02/sections/section-05.ar.md)
-7. فهم الثقة واليقين (Confidence and Uncertainty).
+7. [الثقة المُعايَرة (Calibrated Trust): متى لا تثق بمخرجات الذكاء الاصطناعي.](book/chapters/Chapter-02/sections/section-06.ar.md)
 8. متى يجب ألا تثق بمخرجات الذكاء الاصطناعي.
 
 ---

@@ -19,6 +19,7 @@
 - Chapter 2 — Section 3: The Limits of Statistical Reasoning ([v0.2.2](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.2.2))
 - Chapter 2 — Section 4: Hallucinations and Failure Modes ([v0.2.3](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.2.3))
 - Chapter 2 — Section 5: Deterministic vs Probabilistic Systems ([v0.2.4](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.2.4))
+- Chapter 2 — Section 6: Understanding Confidence and Uncertainty ([v0.2.5](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.2.5))
 
 ### Planned
 
@@ -54,7 +55,7 @@
 4. [The Limits of Statistical Reasoning](book/chapters/Chapter-02/sections/section-03.en.md)
 5. [Hallucinations and Failure Modes](book/chapters/Chapter-02/sections/section-04.en.md)
 6. [Deterministic vs Probabilistic Systems](book/chapters/Chapter-02/sections/section-05.en.md)
-7. Understanding Confidence and Uncertainty
+7. [Understanding Confidence and Uncertainty](book/chapters/Chapter-02/sections/section-06.en.md)
 8. When Not to Trust AI Output
 
 ---
