@@ -199,6 +199,14 @@ The engineering journey behind this project is documented through a continuously
       <td align="center">✔</td>
       <td align="center">✔</td>
     </tr>
+    <tr>
+      <td align="center">🟢</td>
+      <td align="center">023</td>
+      <td align="left"><a href="./docs/articles/v0.2.4/023-Deterministic-vs-Probabilistic-Systems/article.en.md">Deterministic vs Probabilistic Systems: The Boundary That Makes AI Callable</a></td>
+      <td align="center">✔</td>
+      <td align="center">✔</td>
+      <td align="center">✔</td>
+    </tr>
 
   </tbody>
 </table>
