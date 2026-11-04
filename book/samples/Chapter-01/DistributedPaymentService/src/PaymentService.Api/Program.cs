@@ -7,7 +7,6 @@
 using PaymentService.Api.Endpoints;
 using PaymentService.Api.Serialization;
 using PaymentService.Api.Workers;
-using PaymentService.Application;
 using PaymentService.Application.Ports;
 using PaymentService.Application.UseCases;
 using PaymentService.Infrastructure.Gateway;
@@ -59,12 +58,6 @@ builder.Services.AddSingleton<IMessageBus>(
 builder.Services.AddSingleton<IDataProcessor, LoggingDataProcessor>();
 builder.Services.AddSingleton<IUserPreferenceService, InMemoryUserPreferenceService>();
 
-// Outbox port: registered so every application port has exactly one
-// implementation in the graph. No hosted dispatcher ships in this sample —
-// dispatch is demonstrated and verified by the outbox integration tests,
-// not by runtime traffic. Production hosts a dispatcher over this contract.
-builder.Services.AddSingleton<IOutbox, InMemoryOutbox>();
-
 // Gateway: stub by default so the sample runs with zero external
 // dependencies. Set ExternalGateway:UseStub=false plus a real
 // ExternalGateway:BaseUrl for the Polly-pipelined production client.
@@ -86,8 +79,7 @@ else
 
 // ── Application ───────────────────────────────────────────────────────────
 
-// Layer-owned registrations (see ApplicationExtensions).
-builder.Services.AddApplication();
+builder.Services.AddScoped<PaymentProcessor>();
 
 // ── Workers ───────────────────────────────────────────────────────────────
 

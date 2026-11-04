@@ -7,6 +7,7 @@
 
 using PaymentService.Core.Domain;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Jeninnet.Assertions;
 
 namespace PaymentService.Tests.Unit.Domain;
 
@@ -22,18 +23,17 @@ public sealed class PaymentTests
 
         var payment = Payment.Create(customerId, amount, method);
 
-        Assert.AreEqual(PaymentStatus.Pending, payment.Status);
-        Assert.AreEqual(customerId, payment.CustomerId);
-        Assert.AreEqual(amount, payment.Amount);
+        payment.Status.Should().Be(PaymentStatus.Pending);
+        payment.CustomerId.Should().Be(customerId);
+        payment.Amount.Should().Be(amount);
     }
 
     [TestMethod]
     public void Create_ZeroAmount_ThrowsDomainException()
     {
-        var ex = Assert.ThrowsException<DomainException>(() =>
-            Payment.Create(CustomerId.New(), Money.Of(0m), PaymentMethod.Card("tok")));
+        var ex = FluentActions.Invoking(() => { Payment.Create(CustomerId.New(), Money.Of(0m), PaymentMethod.Card("tok")); }).Should().Throw<DomainException>().Which;
 
-        StringAssert.Contains(ex.Message, "positive");
+        ex.Message.Should().Contain("positive");
     }
 
     [TestMethod]
@@ -44,8 +44,8 @@ public sealed class PaymentTests
 
         payment.MarkProcessed();
 
-        Assert.AreEqual(PaymentStatus.Processed, payment.Status);
-        Assert.IsNotNull(payment.ProcessedAt);
+        payment.Status.Should().Be(PaymentStatus.Processed);
+        payment.ProcessedAt.Should().HaveValue();
     }
 
     [TestMethod]
@@ -55,7 +55,7 @@ public sealed class PaymentTests
             CustomerId.New(), Money.Of(50m), PaymentMethod.Card("tok_test"));
         payment.MarkProcessed();
 
-        Assert.ThrowsException<DomainException>(() => payment.MarkProcessed());
+        FluentActions.Invoking(() => { payment.MarkProcessed(); }).Should().Throw<DomainException>();
     }
 
     [TestMethod]
@@ -66,7 +66,7 @@ public sealed class PaymentTests
 
         payment.MarkFailed();
 
-        Assert.AreEqual(PaymentStatus.Failed, payment.Status);
+        payment.Status.Should().Be(PaymentStatus.Failed);
     }
 
     [TestMethod]
@@ -76,7 +76,7 @@ public sealed class PaymentTests
             CustomerId.New(), Money.Of(75m), PaymentMethod.BankTransfer("iban_test"));
         payment.MarkFailed();
 
-        Assert.ThrowsException<DomainException>(() => payment.MarkFailed());
+        FluentActions.Invoking(() => { payment.MarkFailed(); }).Should().Throw<DomainException>();
     }
 
     // ── Money value object ───────────────────────────────────────────────
@@ -85,13 +85,13 @@ public sealed class PaymentTests
     public void MoneyOf_NormalisesUpperCase()
     {
         var money = Money.Of(10m, "usd");
-        Assert.AreEqual("USD", money.Currency);
+        money.Currency.Should().Be("USD");
     }
 
     [TestMethod]
     public void MoneyOf_EmptyCurrency_ThrowsDomainException()
     {
-        Assert.ThrowsException<DomainException>(() => Money.Of(10m, ""));
+        FluentActions.Invoking(() => { Money.Of(10m, ""); }).Should().Throw<DomainException>();
     }
 
     // ── PaymentId value object ───────────────────────────────────────────
@@ -101,6 +101,6 @@ public sealed class PaymentTests
     {
         var id1 = PaymentId.New();
         var id2 = PaymentId.New();
-        Assert.AreNotEqual(id1, id2);
+        id2.Should().NotBe(id1);
     }
 }

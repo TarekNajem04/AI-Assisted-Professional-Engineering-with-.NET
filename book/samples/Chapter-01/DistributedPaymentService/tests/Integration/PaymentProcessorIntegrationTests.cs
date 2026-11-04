@@ -14,6 +14,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PaymentService.Application.Ports;
 using PaymentService.Application.UseCases;
 using PaymentService.Core.Domain;
+using Jeninnet.Assertions;
 
 namespace PaymentService.Tests.Integration;
 
@@ -48,7 +49,7 @@ public sealed class PaymentProcessorIntegrationTests
 
         // Act 1: First call — should succeed.
         var result1 = await processor.ProcessAsync(request, default);
-        Assert.IsTrue(result1.IsSuccess);
+        (result1.IsSuccess).Should().BeTrue();
 
         // Simulate process restart: create a NEW processor instance.
         // If idempotency lived in memory or cache, this new instance wouldn't know.
@@ -56,10 +57,10 @@ public sealed class PaymentProcessorIntegrationTests
 
         // Act 2: Same request to new instance — must return Duplicate.
         var result2 = await processor2.ProcessAsync(request, default);
-        Assert.IsTrue(result2.IsDuplicate);
+        (result2.IsDuplicate).Should().BeTrue();
 
         // Gateway must have been called exactly once.
-        Assert.AreEqual(1, gateway.ChargeCallCount);
+        gateway.ChargeCallCount.Should().Be(1);
     }
 
     // ── Test 2: Gateway timeout returns 503, not 500 ─────────────────────
@@ -83,9 +84,9 @@ public sealed class PaymentProcessorIntegrationTests
         var result = await processor.ProcessAsync(request, default);
 
         // Assert: GatewayTimeout result, not an exception.
-        Assert.AreEqual("GATEWAY_TIMEOUT", result.ErrorCode);
+        result.ErrorCode.Should().Be("GATEWAY_TIMEOUT");
         // Payment should be persisted as Failed (not lost).
-        Assert.IsTrue(repository.HasFailedPayment);
+        (repository.HasFailedPayment).Should().BeTrue();
     }
 
     // ── Test 3: Idempotency key recorded atomically with payment ─────────
@@ -109,8 +110,8 @@ public sealed class PaymentProcessorIntegrationTests
         await processor.ProcessAsync(request, default);
 
         // Both the payment and the idempotency key must exist.
-        Assert.IsTrue(repository.HasPayment);
-        Assert.IsTrue(await repository.IdempotencyKeyExistsAsync(key, default));
+        (repository.HasPayment).Should().BeTrue();
+        (await repository.IdempotencyKeyExistsAsync(key, default)).Should().BeTrue();
     }
 
     // ── Test 4: Unreachable gateway returns 503, not 500 ────────────────
@@ -133,8 +134,8 @@ public sealed class PaymentProcessorIntegrationTests
 
         var result = await processor.ProcessAsync(request, default);
 
-        Assert.AreEqual("GATEWAY_UNREACHABLE", result.ErrorCode);
-        Assert.IsTrue(repository.HasFailedPayment);
+        result.ErrorCode.Should().Be("GATEWAY_UNREACHABLE");
+        (repository.HasFailedPayment).Should().BeTrue();
     }
 
     // ── Test doubles ─────────────────────────────────────────────────────

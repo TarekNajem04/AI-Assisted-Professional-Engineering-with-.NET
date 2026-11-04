@@ -20,6 +20,7 @@
     <PackageReference Include="Microsoft.NET.Test.Sdk"  Version="17.12.0" />
     <PackageReference Include="MSTest.TestAdapter"       Version="3.7.3" />
     <PackageReference Include="MSTest.TestFramework"    Version="3.7.3" />
+    <PackageReference Include="Jeninnet.Assertions" Version="1.0.0" />
     <PackageReference Include="Moq"                     Version="4.20.72" />
     <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.2" />
   </ItemGroup>

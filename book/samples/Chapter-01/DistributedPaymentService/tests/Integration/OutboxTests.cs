@@ -8,6 +8,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PaymentService.Application.Ports;
 using PaymentService.Infrastructure.Messaging;
+using Jeninnet.Assertions;
 
 namespace PaymentService.Tests.Integration;
 
@@ -21,8 +22,8 @@ public sealed class OutboxTests
     {
         var outbox = new InMemoryOutbox();
 
-        await Assert.ThrowsExceptionAsync<ArgumentException>(() =>
-            outbox.StoreAsync("", """{"orderId":"o-1"}""", default));
+        await FluentActions.Awaiting(() =>
+            outbox.StoreAsync("", """{"orderId":"o-1"}""", default)).Should().ThrowAsync<ArgumentException>();
     }
 
     // ── Happy path: store → read → dispatch → mark ────────────────────────
@@ -34,15 +35,15 @@ public sealed class OutboxTests
 
         var stored = await outbox.StoreAsync(
             "OrderPlaced", """{"orderId":"o-1"}""", default);
-        Assert.AreEqual(1, outbox.PendingCount);
+        outbox.PendingCount.Should().Be(1);
 
         var pending = await outbox.ReadPendingAsync(10, default);
-        Assert.AreEqual(1, pending.Count);
-        Assert.AreEqual(stored.Sequence, pending[0].Sequence);
-        Assert.AreEqual("OrderPlaced", pending[0].EventType);
+        pending.Count.Should().Be(1);
+        pending[0].Sequence.Should().Be(stored.Sequence);
+        pending[0].EventType.Should().Be("OrderPlaced");
 
         await outbox.MarkDispatchedAsync(stored.Sequence, default);
-        Assert.AreEqual(0, outbox.PendingCount);
+        outbox.PendingCount.Should().Be(0);
     }
 
     // ── Obligation 2 (failure modes): crash-before-mark redelivers ────────
@@ -60,12 +61,12 @@ public sealed class OutboxTests
 
         // Dispatcher delivers… then crashes before MarkDispatchedAsync.
         var firstRead = await outbox.ReadPendingAsync(10, default);
-        Assert.AreEqual(1, firstRead.Count);
+        firstRead.Count.Should().Be(1);
 
         // Restarted dispatcher reads again: the event is still there.
         var secondRead = await outbox.ReadPendingAsync(10, default);
-        Assert.AreEqual(1, secondRead.Count);
-        Assert.AreEqual(stored.Sequence, secondRead[0].Sequence);
+        secondRead.Count.Should().Be(1);
+        secondRead[0].Sequence.Should().Be(stored.Sequence);
     }
 
     // ── Obligation 3 (visibility): depth is observable ────────────────────
@@ -75,14 +76,14 @@ public sealed class OutboxTests
     {
         var outbox = new InMemoryOutbox();
 
-        Assert.AreEqual(0, outbox.PendingCount);
+        outbox.PendingCount.Should().Be(0);
 
         var first = await outbox.StoreAsync("A", """{"n":1}""", default);
         await outbox.StoreAsync("B", """{"n":2}""", default);
-        Assert.AreEqual(2, outbox.PendingCount);
+        outbox.PendingCount.Should().Be(2);
 
         await outbox.MarkDispatchedAsync(first.Sequence, default);
-        Assert.AreEqual(1, outbox.PendingCount);
+        outbox.PendingCount.Should().Be(1);
     }
 
     // ── Adapter honesty: concurrent stores stay atomic and ordered ────────
@@ -95,7 +96,7 @@ public sealed class OutboxTests
         var stored = await Task.WhenAll(Enumerable.Range(0, 50).Select(i =>
             outbox.StoreAsync("E", $$"""{"n":{{i}}}""", default)));
 
-        Assert.AreEqual(50, stored.Select(m => m.Sequence).Distinct().Count());
-        Assert.AreEqual(50, outbox.PendingCount);
+        stored.Select(m => m.Sequence).Distinct().Count().Should().Be(50);
+        outbox.PendingCount.Should().Be(50);
     }
 }
