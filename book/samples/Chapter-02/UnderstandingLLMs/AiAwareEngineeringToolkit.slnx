@@ -1,0 +1,8 @@
+<!-- book/samples/Chapter02_UnderstandingLLMs/AiAwareEngineeringToolkit.slnx -->
+<Solution>
+  <Project Path="src/AiToolkit.Core/AiToolkit.Core.csproj" />
+  <Project Path="src/AiToolkit.Application/AiToolkit.Application.csproj" />
+  <Project Path="src/AiToolkit.Infrastructure/AiToolkit.Infrastructure.csproj" />
+  <Project Path="src/AiToolkit.Api/AiToolkit.Api.csproj" />
+  <Project Path="tests/Unit/AiToolkit.Tests.Unit.csproj" />
+</Solution>

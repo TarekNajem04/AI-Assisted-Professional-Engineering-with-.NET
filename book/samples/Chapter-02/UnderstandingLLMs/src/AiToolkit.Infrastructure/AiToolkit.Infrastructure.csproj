@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- book/samples/Chapter-02/UnderstandingLLMs/src/AiToolkit.Infrastructure/AiToolkit.Infrastructure.csproj -->
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../AiToolkit.Core/AiToolkit.Core.csproj" />
+    <ProjectReference Include="../AiToolkit.Application/AiToolkit.Application.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Version range, not an exact pin: avoids restore failure if the
+         specific patch below is not the currently-published version.
+         Any 2.x release of the official OpenAI SDK satisfies the API
+         surface this sample uses (ChatClient, ApiKeyCredential, streaming). -->
+    <PackageReference Include="OpenAI" Version="[2.0.0,3.0.0)" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.2" />
+  </ItemGroup>
+
+</Project>

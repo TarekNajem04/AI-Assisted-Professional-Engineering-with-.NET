@@ -1,0 +1,6 @@
+# book/samples/Chapter02_UnderstandingLLMs/.gitignore
+
+bin/
+obj/
+.vs/
+*.user

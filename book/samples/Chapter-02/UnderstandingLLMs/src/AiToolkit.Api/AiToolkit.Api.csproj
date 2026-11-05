@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <!-- book/samples/Chapter-02/UnderstandingLLMs/src/AiToolkit.Api/AiToolkit.Api.csproj -->
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <Deterministic>true</Deterministic>
+    <InvariantGlobalization>true</InvariantGlobalization>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../AiToolkit.Core/AiToolkit.Core.csproj" />
+    <ProjectReference Include="../AiToolkit.Application/AiToolkit.Application.csproj" />
+    <ProjectReference Include="../AiToolkit.Infrastructure/AiToolkit.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
