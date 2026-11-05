@@ -20,6 +20,7 @@
 - Chapter 2 — Section 4: Hallucinations and Failure Modes ([v0.2.3](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.2.3))
 - Chapter 2 — Section 5: Deterministic vs Probabilistic Systems ([v0.2.4](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.2.4))
 - Chapter 2 — Section 6: Understanding Confidence and Uncertainty ([v0.2.5](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.2.5))
+- Chapter 2 — Complete Chapter: Understanding Large Language Models for Engineers ([v0.2.6](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.2.6))
 
 ### Planned
 

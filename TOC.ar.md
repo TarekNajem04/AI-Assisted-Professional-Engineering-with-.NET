@@ -22,6 +22,7 @@
 - الفصل 2 — القسم 4: الهلوسة وأنماط الفشل ([v0.2.3](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.2.3))
 - الفصل 2 — القسم 5: الأنظمة الحتمية والأنظمة الاحتمالية ([v0.2.4](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.2.4))
 - الفصل 2 — القسم 6: الثقة المُعايَرة: متى لا تثق بمخرجات الذكاء الاصطناعي ([v0.2.5](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.2.5))
+- الفصل 2 — الفصل الكامل: فهم النماذج اللغوية الكبيرة للمهندسين ([v0.2.6](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.2.6))
 
 ### المخطط للنشر
 
