@@ -23,6 +23,7 @@
 - الفصل 2 — القسم 5: الأنظمة الحتمية والأنظمة الاحتمالية ([v0.2.4](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.2.4))
 - الفصل 2 — القسم 6: الثقة المُعايَرة: متى لا تثق بمخرجات الذكاء الاصطناعي ([v0.2.5](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.2.5))
 - الفصل 2 — الفصل الكامل: فهم النماذج اللغوية الكبيرة للمهندسين ([v0.2.6](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.2.6))
+- الفصل 3 — القسم 1: لماذا الـ Prompting ليس هندسة حتى تجعله كذلك ([v0.3.0](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.3.0))
 
 ### المخطط للنشر
 
@@ -67,7 +68,7 @@
 
 **المواضيع:**
 
-1. لماذا لا تُعد كتابة البرومبت (Prompting) هندسة؟
+1. [لماذا لا تُعد كتابة البرومبت (Prompting) هندسة؟](book/chapters/Chapter-03/sections/section-01.ar.md)
 2. بروتوكولات الاتصال المهيكلة (Structured Communication Protocols).
 3. هندسة السياق (Context Engineering).
 4. تصميم مسارات عمل ذكاء اصطناعي قابلة لإعادة الاستخدام.

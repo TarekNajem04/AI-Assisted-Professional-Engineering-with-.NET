@@ -21,6 +21,7 @@
 - Chapter 2 — Section 5: Deterministic vs Probabilistic Systems ([v0.2.4](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.2.4))
 - Chapter 2 — Section 6: Understanding Confidence and Uncertainty ([v0.2.5](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.2.5))
 - Chapter 2 — Complete Chapter: Understanding Large Language Models for Engineers ([v0.2.6](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.2.6))
+- Chapter 3 — Section 1: Why Prompting Is Not Engineering (Until You Make It One) ([v0.3.0](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.3.0))
 
 ### Planned
 
@@ -65,7 +66,7 @@
 
 **Topics:**
 
-1. Why Prompting Is Not Engineering
+1. [Why Prompting Is Not Engineering](book/chapters/Chapter-03/sections/section-01.en.md)
 2. Structured Communication Protocols
 3. Context Engineering
 4. Designing Reusable AI Workflows
