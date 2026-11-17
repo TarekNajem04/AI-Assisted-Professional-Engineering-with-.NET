@@ -23,6 +23,7 @@
 - Chapter 2 — Complete Chapter: Understanding Large Language Models for Engineers ([v0.2.6](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.2.6))
 - Chapter 3 — Section 1: Why Prompting Is Not Engineering (Until You Make It One) ([v0.3.0](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.3.0))
 - Chapter 3 — Section 2: Context Engineering ([v0.3.1](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.3.1))
+- Chapter 3 — Section 3: Designing Reusable AI Workflows ([v0.3.2](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.3.2))
 
 ### Planned
 
@@ -70,7 +71,7 @@
 1. [Why Prompting Is Not Engineering](book/chapters/Chapter-03/sections/section-01.en.md)
 2. Structured Communication Protocols
 3. [Context Engineering](book/chapters/Chapter-03/sections/section-02.en.md)
-4. Designing Reusable AI Workflows
+4. [Designing Reusable AI Workflows](book/chapters/Chapter-03/sections/section-03.en.md)
 5. Specification-Oriented Conversations
 6. Building Deterministic AI Interactions
 7. State Management Across Multi-Step Tasks

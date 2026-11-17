@@ -25,6 +25,7 @@
 - الفصل 2 — الفصل الكامل: فهم النماذج اللغوية الكبيرة للمهندسين ([v0.2.6](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.2.6))
 - الفصل 3 — القسم 1: لماذا الـ Prompting ليس هندسة حتى تجعله كذلك ([v0.3.0](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.3.0))
 - الفصل 3 — القسم 2: هندسة السياق ([v0.3.1](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.3.1))
+- الفصل 3 — القسم 3: تصميم سير عمل ذكاء اصطناعي قابل لإعادة الاستخدام ([v0.3.2](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.3.2))
 
 ### المخطط للنشر
 
@@ -72,7 +73,7 @@
 1. [لماذا لا تُعد كتابة البرومبت (Prompting) هندسة؟](book/chapters/Chapter-03/sections/section-01.ar.md)
 2. بروتوكولات الاتصال المهيكلة (Structured Communication Protocols).
 3. [هندسة السياق (Context Engineering).](book/chapters/Chapter-03/sections/section-02.ar.md)
-4. تصميم مسارات عمل ذكاء اصطناعي قابلة لإعادة الاستخدام.
+4. [تصميم مسارات عمل ذكاء اصطناعي قابلة لإعادة الاستخدام.](book/chapters/Chapter-03/sections/section-03.ar.md)
 5. المحادثات الموجهة بالمواصفات (Specification-Oriented Conversations).
 6. بناء تفاعلات حتمية مع الذكاء الاصطناعي.
 7. إدارة الحالة (State Management) عبر المهام متعددة الخطوات.
