@@ -25,6 +25,7 @@
 - Chapter 3 — Section 2: Context Engineering ([v0.3.1](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.3.1))
 - Chapter 3 — Section 3: Designing Reusable AI Workflows ([v0.3.2](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.3.2))
 - Chapter 3 — Section 4: Specification-Oriented Conversations ([v0.3.3](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.3.3))
+- Chapter 3 — Section 5: Building Deterministic AI Interactions ([v0.3.4](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.3.4))
 
 ### Planned
 
@@ -74,7 +75,7 @@
 3. [Context Engineering](book/chapters/Chapter-03/sections/section-02.en.md)
 4. [Designing Reusable AI Workflows](book/chapters/Chapter-03/sections/section-03.en.md)
 5. [Specification-Oriented Conversations](book/chapters/Chapter-03/sections/section-04.en.md)
-6. Building Deterministic AI Interactions
+6. [Building Deterministic AI Interactions](book/chapters/Chapter-03/sections/section-05.en.md)
 7. State Management Across Multi-Step Tasks
 8. Designing AI Collaboration Patterns
 
