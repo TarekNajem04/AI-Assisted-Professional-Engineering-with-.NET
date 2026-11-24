@@ -27,6 +27,7 @@
 - Chapter 3 — Section 4: Specification-Oriented Conversations ([v0.3.3](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.3.3))
 - Chapter 3 — Section 5: Building Deterministic AI Interactions ([v0.3.4](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.3.4))
 - Chapter 3 — Section 6: State Management Across Multi-Step Tasks and AI Collaboration Patterns ([v0.3.5](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.3.5))
+- Chapter 3 — Complete Chapter: Engineering Communication with AI ([v0.3.6](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.3.6))
 
 ### Planned
 

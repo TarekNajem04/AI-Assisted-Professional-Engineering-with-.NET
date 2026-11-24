@@ -29,6 +29,7 @@
 - الفصل 3 — القسم 4: محادثات موجَّهة بالمواصفات ([v0.3.3](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.3.3))
 - الفصل 3 — القسم 5: بناء تفاعلات AI محددة النتائج ([v0.3.4](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.3.4))
 - الفصل 3 — القسم 6: إدارة الحالة عبر المهام متعددة الخطوات وأنماط التعاون مع AI ([v0.3.5](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.3.5))
+- الفصل 3 — الفصل الكامل: التواصل الهندسي مع الذكاء الاصطناعي ([v0.3.6](https://github.com/TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET/releases/tag/v0.3.6))
 
 ### المخطط للنشر
 
