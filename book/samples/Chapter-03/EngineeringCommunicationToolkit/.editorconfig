@@ -1,0 +1,20 @@
+# book/samples/Chapter-03/EngineeringCommunicationToolkit/.editorconfig
+# Formatting contract for the Chapter 03 sample.
+
+root = true
+
+[*]
+charset = utf-8
+indent_style = space
+indent_size = 4
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.{csproj,slnx,props,targets,config,json}]
+indent_size = 4
+
+[*.cs]
+dotnet_sort_system_directives_first = true
+csharp_new_line_before_open_brace = all
+csharp_prefer_braces = false:suggestion
+csharp_style_var_for_built_in_types = false:suggestion

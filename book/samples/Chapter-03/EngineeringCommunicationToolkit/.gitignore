@@ -1,0 +1,5 @@
+# book/samples/Chapter-03/EngineeringCommunicationToolkit/.gitignore
+bin/
+obj/
+.vs/
+*.user
